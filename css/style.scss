@@ -36,6 +36,24 @@ html {
     }
   }
 
+  #aside {
+    border: 2px solid indigo;
+    grid-row: 1 / 5;
+    display: flex;
+    flex-direction: column;
+
+    .perfil {
+      border: 2px solid indianred;
+      width: 100%;
+      height: 30rem;
+    }
+
+    .menu {
+      border: 2px solid saddlebrown;
+      height: 45rem;
+    }
+  }
+
   #section {
     border: 2px solid green;
     padding: 0 2rem 0 2rem;
