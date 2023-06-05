@@ -68,6 +68,24 @@ html {
   border: 2px solid blue;
   grid-column: 2/3;
 }
+.container #main .main-header {
+  border: 2px solid khaki;
+  height: 4rem;
+}
+.container #main .table {
+  border: 2px solid teal;
+  height: calc(100% - 4rem);
+  display: grid;
+  grid-template-rows: repeat(11, 1fr);
+}
+.container #main .table .row {
+  border: 2px solid lawngreen;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.container #main .table .row .cell {
+  border: 2px solid seagreen;
+}
 .container #footer {
   border: 2px solid yellow;
   display: flex;
