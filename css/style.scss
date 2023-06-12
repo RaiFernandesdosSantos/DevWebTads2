@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 
 html {
@@ -69,6 +70,12 @@ html {
     .menu {
       border: 2px solid saddlebrown;
       height: 45rem;
+
+      a {
+        font-size: 2rem;
+        color: black;
+        font-weight: bold;
+      }
     }
   }
 
