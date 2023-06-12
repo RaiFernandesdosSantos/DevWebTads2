@@ -33,11 +33,15 @@ html {
   width: 13rem;
   height: 100%;
 }
-.container #header .chat {
+.container #header .chat,
+.container #header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 4.5rem;
+}
+.container #header .logo i {
+  color: orange;
 }
 .container #aside {
   border: 2px solid indigo;
@@ -49,6 +53,11 @@ html {
   border: 2px solid indianred;
   width: 100%;
   height: 30rem;
+  display: flex;
+  align-items: center;
+}
+.container #aside .perfil i {
+  font-size: 10rem;
 }
 .container #aside .menu {
   border: 2px solid saddlebrown;
@@ -69,18 +78,23 @@ html {
 .container #section .informacoes {
   border: 2px solid magenta;
   height: 10rem;
+  width: 50rem;
   display: flex;
 }
 .container #section .informacoes .info-l {
   border: 2px solid salmon;
-  width: 50%;
+  width: 45%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-size: 2.3rem;
+}
+.container #section .informacoes .info-l span {
+  color: lawngreen;
 }
 .container #section .informacoes .info-r {
   border: 2px solid khaki;
-  width: 50%;
+  width: 55%;
   display: flex;
   align-items: center;
 }
@@ -88,6 +102,14 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-size: 2.3rem;
+}
+.container #section .informacoes .info-r .info-group .cima {
+  text-align: left;
+  width: 100%;
+}
+.container #section .informacoes i {
+  font-size: 5rem;
 }
 .container #main {
   border: 2px solid blue;
