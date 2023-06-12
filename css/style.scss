@@ -109,6 +109,14 @@ html {
     .main-header {
       border: 2px solid khaki;
       height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem 0 2rem;
+
+      div i {
+        font-size: 2.5rem;
+      }
     }
 
     .table {
@@ -129,6 +137,10 @@ html {
           align-items: center;
           justify-content: center;
           font-size: 1.5rem;
+
+          i {
+            font-size: 3rem;
+          }
         }
       }
     }

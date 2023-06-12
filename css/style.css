@@ -96,6 +96,13 @@ html {
 .container #main .main-header {
   border: 2px solid khaki;
   height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem 0 2rem;
+}
+.container #main .main-header div i {
+  font-size: 2.5rem;
 }
 .container #main .table {
   border: 2px solid teal;
@@ -115,6 +122,9 @@ html {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+}
+.container #main .table .row .cell i {
+  font-size: 3rem;
 }
 .container #footer {
   border: 2px solid yellow;
