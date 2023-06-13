@@ -60,9 +60,16 @@ html {
 .container #aside .perfil i {
   font-size: 10rem;
 }
+.container #aside .perfil .span-group .nome {
+  font-size: 2rem;
+}
+.container #aside .perfil .span-group .cpf {
+  font-size: 1.3rem;
+}
 .container #aside .menu {
   border: 2px solid saddlebrown;
   height: 45rem;
+  padding: 1rem 0 0 1rem;
 }
 .container #aside .menu a {
   font-size: 2rem;
