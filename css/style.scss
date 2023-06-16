@@ -220,9 +220,61 @@ html {
 
   .header-perfil {
     border: 2px solid red;
+    grid-row: 1 / 4;
+    grid-column: 1 / 17;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+
+    .volta,
+    .foto {
+      border: 2px solid greenyellow;
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+    }
   }
 
   .main-perfil {
     border: 2px solid blue;
+    grid-row: 4 / 12;
+    grid-column: 1 / 17;
+    display: grid;
+    grid-template-rows: 5rem repeat(4, 1fr);
+
+    .texto {
+      border: 2px solid blueviolet;
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .item-mp {
+      border: 2px solid hotpink;
+    }
+  }
+
+  .footer-perfil {
+    border: 2px solid green;
+    grid-row: 12 / 17;
+    grid-column: 1 / 17;
+    display: grid;
+    grid-template-rows: 5rem repeat(3, 1fr);
+
+    .texto {
+      border: 2px solid blueviolet;
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .item-fp {
+      border: 2px solid hotpink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      font-size: 1.3rem;
+      gap: 0.5rem;
+    }
   }
 }
