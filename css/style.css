@@ -199,6 +199,12 @@ html {
   align-items: center;
   padding: 1rem;
 }
+.container .header-perfil .volta {
+  gap: 1rem;
+}
+.container .header-perfil .volta i {
+  font-size: 3rem;
+}
 .container .main-perfil {
   border: 2px solid blue;
   grid-row: 4/12;
@@ -214,6 +220,20 @@ html {
 }
 .container .main-perfil .item-mp {
   border: 2px solid hotpink;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.container .main-perfil .item-mp .text-group {
+  width: 25rem;
+}
+.container .main-perfil .item-mp .text-group input {
+  border: none;
+}
+.container .main-perfil .item-mp i {
+  font-size: 3.5rem;
 }
 .container .footer-perfil {
   border: 2px solid green;

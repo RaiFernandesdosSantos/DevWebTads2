@@ -232,6 +232,14 @@ html {
       align-items: center;
       padding: 1rem;
     }
+
+    .volta {
+      gap: 1rem;
+
+      i {
+        font-size: 3rem;
+      }
+    }
   }
 
   .main-perfil {
@@ -250,6 +258,23 @@ html {
 
     .item-mp {
       border: 2px solid hotpink;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 1rem;
+      font-size: 1.5rem;
+
+      .text-group {
+        width: 25rem;
+
+        input {
+          border: none;
+        }
+      }
+
+      i {
+        font-size: 3.5rem;
+      }
     }
   }
 
