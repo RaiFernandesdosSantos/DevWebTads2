@@ -240,6 +240,22 @@ html {
         font-size: 3rem;
       }
     }
+
+    .foto {
+      justify-content: center;
+
+      #perfil {
+        font-size: 10rem;
+      }
+
+      #camera {
+        font-size: 4rem;
+        position: absolute;
+        top: 13%;
+        left: 51%;
+        color: orange;
+      }
+    }
   }
 
   .main-perfil {

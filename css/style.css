@@ -205,6 +205,19 @@ html {
 .container .header-perfil .volta i {
   font-size: 3rem;
 }
+.container .header-perfil .foto {
+  justify-content: center;
+}
+.container .header-perfil .foto #perfil {
+  font-size: 10rem;
+}
+.container .header-perfil .foto #camera {
+  font-size: 4rem;
+  position: absolute;
+  top: 13%;
+  left: 51%;
+  color: orange;
+}
 .container .main-perfil {
   border: 2px solid blue;
   grid-row: 4/12;
