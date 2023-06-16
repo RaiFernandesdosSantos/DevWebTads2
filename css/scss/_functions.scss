@@ -1,0 +1,39 @@
+$laranja: orange;
+$fonte: black;
+
+@mixin reset() {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: $fonte;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@mixin flex($align, $justify, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin grid($qtdR, $rows, $qtdC, $columns) {
+    display: grid;
+    grid-template: repeat($qtdR, $rows) / repeat($qtdC, $columns);
+}
+
+@mixin posicaoGrid($startR, $endR, $starC, $endC) {
+    grid-row: $startR / $endR;
+    grid-column: $starC / $endC;
+}
+
+@mixin alturaLargura($width, $height) {
+    width: $width;
+    height: $height;
+}
