@@ -339,7 +339,7 @@ html {
   .container #header {
     grid-row-start: 1;
     grid-row-end: 3;
-    grid-column-start: 4;
+    grid-column-start: 1;
     grid-column-end: 17;
     border: 2px solid red;
     display: flex;
@@ -372,6 +372,7 @@ html {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
+    display: none;
   }
   .container #aside .perfil {
     border: 2px solid indianred;
@@ -412,7 +413,7 @@ html {
     flex-direction: column;
     grid-row-start: 3;
     grid-row-end: 6;
-    grid-column-start: 4;
+    grid-column-start: 1;
     grid-column-end: 17;
   }
   .container #section h3 {
@@ -421,7 +422,7 @@ html {
   }
   .container #section .informacoes {
     border: 2px solid magenta;
-    width: 50rem;
+    width: 36rem;
     height: 10rem;
     display: flex;
     align-items: center;
@@ -469,8 +470,9 @@ html {
     border: 2px solid blue;
     grid-row-start: 6;
     grid-row-end: 15;
-    grid-column-start: 4;
+    grid-column-start: 1;
     grid-column-end: 17;
+    overflow: hidden;
   }
   .container #main .main-header {
     border: 2px solid khaki;
@@ -514,7 +516,7 @@ html {
     border: 2px solid yellow;
     grid-row-start: 15;
     grid-row-end: 17;
-    grid-column-start: 4;
+    grid-column-start: 1;
     grid-column-end: 17;
     display: flex;
     align-items: center;
