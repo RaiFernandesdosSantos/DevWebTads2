@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
-@use 'scss/functions';
+@import "scss/functions";
 
 @include reset;
+
 
 .container {
   border: 2px solid black;
@@ -29,7 +28,7 @@
     }
 
     .logo i {
-      color: orange;
+      color: $laranja;
     }
   }
 
@@ -65,7 +64,7 @@
 
       a {
         font-size: 2rem;
-        color: black;
+        color: $fonte;
         font-weight: bold;
       }
     }
@@ -167,10 +166,16 @@
       @include alturaLargura(20rem, 100%);
       @include flex(center, center, column);
       font-size: 1.7rem;
+      color: $fonte;
 
       i {
         font-size: 2.7rem;
       }
+    }
+
+    .selecionado span,
+    .selecionado i {
+      color: $laranja;
     }
   }
 
@@ -259,7 +264,7 @@
 
     .item-fp {
       border: 2px solid hotpink;
-      @include flex(center, flex-start, column);
+      @include flex(flex-start, center, column);
       padding: 1rem;
       font-size: 1.3rem;
       gap: 0.5rem;
