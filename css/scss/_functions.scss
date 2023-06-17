@@ -1,0 +1,44 @@
+$laranja: orange;
+$fonte: black;
+
+@mixin reset {
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+    }
+
+    html {
+        font-size: 62.5%;
+        color: $fonte;
+    }
+}
+
+@mixin flex($align, $justify, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin grid($qtdR, $rows, $qtdC, $columns) {
+    display: grid;
+    grid-template-rows: repeat($qtdR, $rows);
+    grid-template-columns: repeat($qtdC, $columns);
+}
+
+@mixin posicaoGrid($startR, $endR, $starC, $endC) {
+    grid-row-start: $startR ;
+    grid-row-end: $endR;
+    grid-column-start: $starC ;
+    grid-column-end: $endC;
+}
+
+@mixin alturaLargura($width, $height) {
+    width: $width;
+    height: $height;
+}
