@@ -13,12 +13,7 @@
                 @include functions.posicaoGrid(1, 17, 1, 5);
 
                 .perfil {
-                    @include functions.flex(center, center, column);
                     padding-left: 1rem;
-
-                    .span-group {
-                        @include functions.flex(flex-start, center, column);
-                    }
                 }
             }
 
@@ -32,6 +27,7 @@
 
             #main {
                 @include functions.posicaoGrid(6, 15, 5, 17);
+                overflow: hidden;
             }
 
             #footer {

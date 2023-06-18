@@ -42,13 +42,15 @@
     .perfil {
       border: 2px solid indianred;
       @include functions.alturaLargura(100%, 30rem);
-      @include functions.flex(center, flex-start, row);
+      @include functions.flex(center, center, column);
 
       i {
         font-size: 10rem;
       }
 
       .span-group {
+        @include functions.flex(flex-start, center, column);
+
         .nome {
           font-size: 2rem;
         }
@@ -129,6 +131,7 @@
   #main {
     border: 2px solid blue;
     @include functions.posicaoGrid(6, 15, 3, 17);
+    overflow: hidden;
 
     .main-header {
       border: 2px solid khaki;
