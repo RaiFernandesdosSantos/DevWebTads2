@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contracheque</title>
+  <title>Notificações</title>
 
   <link rel="stylesheet" href="../css/style.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -46,48 +46,27 @@
       </div>
     </aside>
 
-    <main class="main-contracheque">
-      <div class="selectmonth">
-        <span>Contracheque</span>
-        <div class="select">
-          <select name="ano" id="">
-            <option value="">06-2023</option>
-            <option value="">05-2023</option>
-            <option value="">04-2023</option>
-            <option value="">03-2023</option>
-          </select>
-        </div>
-        <div class="download">
-          <i class='bx bx-download'></i>
-        </div>
-      </div>
-      <div class="graph-values">
-        <div class="graph">
-          <i class='bx bx-table'></i>
-          <span>Salário líquido:</span>
-          <span>R$1.600,00</span>
-        </div>
-        <div class="values">
-          <ul>
-            <li>
-              <span>Salário normal</span>
-              <span>R$1.325,00</span>
-            </li>
-            <li>
-              <span>Gratificação</span>
-              <span>R$410,00</span>
-            </li>
-            <li>
-              <span>INSS</span>
-              <span>R$136,00</span>
-            </li>
-            <li>
-              <span>Descontos</span>
-              <span>R$0</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <main class="main-notificacoes">
+      <span>Notificações</span>
+      <div class="notification-box">
+        <i class='bx bx-fingerprint'></i>
+        <h3>Ausência de marcação</h3>
+        <h4>há 2 dias</h4>
+        <span>Você náo registrou a marcação no dia 16/06/2023 18:00</span>
+        <a href="#">Ver detalhes</a>
+        <div class="notification-box">
+          <i class='bx bx-fingerprint'></i>
+          <h3>Ausência de marcação</h3>
+          <h4>há 2 dias</h4>
+          <span>Você náo registrou a marcação no dia 16/06/2023 18:00</span>
+          <a href="#">Ver detalhes</a>
+          <div class="notification-box">
+            <i class='bx bx-fingerprint'></i>
+            <h3>Ausência de marcação</h3>
+            <h4>há 2 dias</h4>
+            <span>Você náo registrou a marcação no dia 16/06/2023 18:00</span>
+            <a href="#">Ver detalhes</a>
+          </div>
     </main>
 
     <footer id="footer">
@@ -97,17 +76,17 @@
         <span>Ponto</span>
       </a>
 
-      <div class="footer-item selecionado">
+      <a href="contracheque.html" class="footer-item">
         <i class="bx bx-folder-open"></i>
 
         <span>Contracheque</span>
-      </div>
+      </a>
 
-      <a href="notificacoes.html" class="footer-item">
+      <div class="footer-item selecionado">
         <i class="bx bxs-bell"></i>
 
         <span>Notificacoes</span>
-      </a>
+      </div>
     </footer>
   </div>
 </body>
