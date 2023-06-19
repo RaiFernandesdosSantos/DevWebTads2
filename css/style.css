@@ -460,4 +460,60 @@ html {
   .container #footer .footer-item i {
     font-size: 2rem;
   }
+  .container .header-pefil {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 17;
+  }
+  .container .header-pefil .volta,
+  .container .header-pefil .foto {
+    padding: 0 0 0 1rem;
+  }
+  .container .header-pefil .volta i {
+    font-size: 2rem;
+  }
+  .container .header-pefil .foto #perfil {
+    font-size: 7rem;
+  }
+  .container .main-perfil {
+    display: grid;
+    grid-template-rows: 4rem repeat(4, 1fr);
+    grid-row-start: 5;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 17;
+  }
+  .container .main-perfil .texto {
+    padding: 0 0 0 1rem;
+    font-size: 1rem;
+  }
+  .container .main-perfil .item-mp {
+    padding: 0 1rem 0 1rem;
+    gap: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 1.2rem;
+  }
+  .container .main-perfil .item-mp .text-group {
+    width: 50%;
+  }
+  .container .main-perfil .item-mp i {
+    font-size: 2.5rem;
+  }
+  .container .footer-perfil {
+    display: grid;
+    grid-template-rows: 4rem repeat(3, 1fr);
+  }
+  .container .footer-perfil .texto {
+    padding: 0 0 0 1rem;
+    font-size: 1rem;
+  }
+  .container .footer-perfil .item-fp {
+    padding: 0 0 0 1rem;
+    gap: 0;
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
