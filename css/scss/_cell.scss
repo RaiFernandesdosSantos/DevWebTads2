@@ -140,12 +140,31 @@
                 }
             }
 
-            .digitemensagem {
-                form {
-                    .group {
-                        input {
-                            width: 15rem;
+            .main-chat {
+                .chatbox {
+                    .generica {
+                        width: 60%;
+                        height: 15rem;
+                    }
+                }
+
+                .digitemensagem {
+                    form {
+                        i {
+                            font-size: 2rem;
+                        }
+
+                        .group {
+                            input {
+                                width: 18rem;
+                                height: 4rem;
+                            }
+                        }
+
+                        .enviar,
+                        .upload {
                             height: 4rem;
+                            width: 4rem;
                         }
                     }
                 }

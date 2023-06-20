@@ -419,7 +419,6 @@ html {
   width: 100rem;
   border-radius: 1.2rem 0 0 1.2rem;
   border: none;
-  padding-left: 2rem;
 }
 .container .main-chat .digitemensagem form .group .upload {
   border: none;
@@ -468,6 +467,12 @@ html {
     width: 90%;
     height: 10rem;
   }
+  .container #section .informacoes .info-l {
+    font-size: 2rem;
+  }
+  .container #section .informacoes .info-r .info-group {
+    font-size: 2rem;
+  }
   .container #main {
     grid-row-start: 6;
     grid-row-end: 15;
@@ -480,6 +485,13 @@ html {
     grid-row-end: 17;
     grid-column-start: 5;
     grid-column-end: 17;
+  }
+  .container .main-chat .chatbox .generica {
+    width: 65%;
+    height: 13rem;
+  }
+  .container .main-chat .digitemensagem form .group input {
+    width: 28rem;
   }
 }
 @media (max-width: 499px) {
@@ -621,8 +633,20 @@ html {
   .container .header-chat .texto h1 {
     font-size: 2.5rem;
   }
-  .container .digitemensagem form .group input {
-    width: 15rem;
+  .container .main-chat .chatbox .generica {
+    width: 60%;
+    height: 15rem;
+  }
+  .container .main-chat .digitemensagem form i {
+    font-size: 2rem;
+  }
+  .container .main-chat .digitemensagem form .group input {
+    width: 18rem;
     height: 4rem;
+  }
+  .container .main-chat .digitemensagem form .enviar,
+  .container .main-chat .digitemensagem form .upload {
+    height: 4rem;
+    width: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */

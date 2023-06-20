@@ -22,6 +22,16 @@
 
                 .informacoes {
                     @include functions.alturaLargura(90%, 10rem);
+
+                    .info-l {
+                        font-size: 2rem;
+                    }
+
+                    .info-r {
+                        .info-group {
+                            font-size: 2rem;
+                        }
+                    }
                 }
             }
 
@@ -32,6 +42,25 @@
 
             #footer {
                 @include functions.posicaoGrid(15, 17, 5, 17)
+            }
+
+            .main-chat {
+                .chatbox {
+                    .generica {
+                        width: 65%;
+                        height: 13rem;
+                    }
+                }
+
+                .digitemensagem {
+                    form {
+                        .group {
+                            input {
+                                width: 28rem;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
