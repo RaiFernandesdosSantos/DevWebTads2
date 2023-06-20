@@ -342,7 +342,7 @@ html {
 .container .header-chat {
   border: solid 2px blue;
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 17;
   display: flex;
@@ -350,22 +350,22 @@ html {
   justify-content: space-between;
   flex-direction: row;
   padding: 0 2rem 0 1rem;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .container .header-chat .texto h1 {
   font-size: 3rem;
 }
 .container .header-chat .logo i {
-  font-size: 4rem;
+  font-size: 5rem;
   color: orange;
 }
 .container .main-chat {
-  grid-row-start: 4;
+  grid-row-start: 3;
   grid-row-end: 17;
   grid-column-start: 1;
   grid-column-end: 17;
   display: grid;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 85% 15%;
   border: solid 2px red;
   padding: 0 1rem 0 1rem;
 }
@@ -376,12 +376,18 @@ html {
   flex-direction: row;
 }
 .container .main-chat .chatbox .generica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   width: 40%;
   height: 10rem;
   border: solid 2px black;
   font-size: 1.5rem;
+  text-align: justify;
   padding: 1rem;
   border-radius: 0 1.2rem 1.2rem 1.2rem;
+  margin-bottom: 2rem;
 }
 .container .main-chat .digitemensagem {
   border: solid 2px purple;
@@ -390,18 +396,47 @@ html {
   justify-content: space-between;
   flex-direction: row;
 }
-.container .main-chat .digitemensagem input {
-  height: 6rem;
-  width: 60rem;
-  border-radius: 1.2rem;
+.container .main-chat .digitemensagem form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
 }
-.container .main-chat .digitemensagem button, .container .main-chat .digitemensagem .upload {
+.container .main-chat .digitemensagem form i {
+  font-size: 3rem;
+}
+.container .main-chat .digitemensagem form .group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  border: 2px solid black;
+  border-radius: 1.2rem;
+  margin-right: 2rem;
+}
+.container .main-chat .digitemensagem form .group input {
   height: 6rem;
-  width: 6rem;
+  width: 80rem;
+  border-radius: 1.2rem 0 0 1.2rem;
+  border: none;
+}
+.container .main-chat .digitemensagem form .group .upload {
+  border: none;
+}
+.container .main-chat .digitemensagem form .upload {
+  border-radius: 0 1.2rem 1.2rem 0;
+}
+.container .main-chat .digitemensagem form .enviar {
   border-radius: 50%;
 }
-.container .main-chat .digitemensagem i {
-  font-size: 1.75rem;
+.container .main-chat .digitemensagem form .enviar,
+.container .main-chat .digitemensagem form .upload {
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 @media (min-width: 500px) and (max-width: 849px) {

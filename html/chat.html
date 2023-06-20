@@ -17,7 +17,9 @@
       <div class="volta">
         <a href="index.html"><i class="bx bx-left-arrow-alt"></i></a>
       </div>
-      <div class="texto"><h1>Suporte ao usuário</h1></div>
+      <div class="texto">
+        <h1>Suporte ao usuário</h1>
+      </div>
       <div class="logo">
         <i class="bx bxl-xing"></i>
       </div>
@@ -27,17 +29,21 @@
       <div class="chatbox">
         <div class="generica">
           <span>Olá, seja bem-vindo ao Suporte ao Usuário, exponha o seu problema com detalhes na caixa abaixo para que
-          possamos atender sua solicitação o mais breve possível.</span>
+            possamos atender sua solicitação o mais breve possível.</span>
         </div>
       </div>
       <div class="digitemensagem">
-      <form action="">
-        <input type="text" placeholder="Descreva aqui seu problema para que possamos ajudá-lo(a)">
-        <div class="upload"><i class='bx bx-upload'></i></div>
-        <button type="button" onclick="alert('Pedido de suporte recebido!')">
-          <i class='bx bx-paper-plane'></i>
-        </button>
-      </form>
+        <form action="">
+          <div class="group">
+            <input type="text" placeholder="Descreva aqui seu problema para que possamos ajudá-lo(a)">
+            <button class="upload" onclick="confirm('Deseja enviar alguma arquivo?')">
+              <i class='bx bx-upload'></i>
+            </button>
+          </div>
+          <button class="enviar" onclick="alert('Pedido de suporte recebido!')">
+            <i class='bx bx-paper-plane'></i>
+          </button>
+        </form>
       </div>
     </main>
   </div>

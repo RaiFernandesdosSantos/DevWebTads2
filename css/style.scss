@@ -282,65 +282,94 @@
     }
   }
 
-  .header-chat{
+  .header-chat {
     border: solid 2px blue;
-    @include functions.posicaoGrid(1, 4, 1, 17);
+    @include functions.posicaoGrid(1, 3, 1, 17);
     @include functions.flex(center, space-between, row);
     padding: 0 2rem 0 1rem;
-    font-size: 3rem;
+    font-size: 4rem;
 
-    .texto h1{
+    .texto h1 {
       font-size: 3rem;
     }
-    .logo i{
-      font-size: 4rem;
+
+    .logo i {
+      font-size: 5rem;
       color: functions.$laranja;
     }
   }
 
-  .main-chat{
-    @include functions.posicaoGrid(4, 17, 1, 17);
+  .main-chat {
+    @include functions.posicaoGrid(3, 17, 1, 17);
     display: grid;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 85% 15%;
     border: solid 2px red;
     padding: 0 1rem 0 1rem;
 
-    .chatbox{
-      @include functions.flex(flex-end, flex-start,row);
+    .chatbox {
+      @include functions.flex(flex-end, flex-start, row);
 
-      .generica{
+      .generica {
+        @include functions.flex(center, center, row);
         width: 40%;
         height: 10rem;
         border: solid 2px black;
         font-size: 1.5rem;
+        text-align: justify;
         padding: 1rem;
         border-radius: 0 1.2rem 1.2rem 1.2rem;
+        margin-bottom: 2rem;
       }
     }
 
-    .digitemensagem{
+    .digitemensagem {
       border: solid 2px purple;
       @include functions.flex(center, space-between, row);
 
-      input{
-        height: 6rem;
-        width: 60rem;
-        border-radius: 1.2rem; 
+      form {
+        @include functions.flex(center, flex-start, row);
+
+        i {
+          font-size: 3rem;
+        }
+
+        .group {
+          @include functions.flex(center, flex-start, row);
+          border: 2px solid black;
+          border-radius: 1.2rem;
+          margin-right: 2rem;
+
+          input {
+            height: 6rem;
+            width: 80rem;
+            border-radius: 1.2rem 0 0 1.2rem;
+            border: none;
+          }
+
+          .upload {
+            border: none;
+          }
+        }
+
+        .upload {
+          border-radius: 0 1.2rem 1.2rem 0;
+        }
+
+        .enviar {
+          border-radius: 50%;
+        }
+
+        .enviar,
+        .upload {
+          height: 6rem;
+          width: 6rem;
+          @include functions.flex(center, center, row);
+        }
       }
-      
-      button, .upload{
-        height: 6rem;
-        width: 6rem;
-        border-radius: 50%;
-      }
-      i{
-        font-size: 1.75rem;
-      }
-      
     }
   }
-  
-  }
+
+}
 
 
 
