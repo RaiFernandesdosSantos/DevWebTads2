@@ -50,16 +50,17 @@
       <div class="selectmonth">
         <span>Contracheque</span>
         <div class="select">
-          <select name="ano" id="">
+          <select name="mes-ano" id="">
             <option value="">06-2023</option>
             <option value="">05-2023</option>
             <option value="">04-2023</option>
             <option value="">03-2023</option>
           </select>
+          <div class="download" onclick="confirm('Realizando download referente ao mês selecionado')">
+            <i class='bx bx-download'></i>
+          </div>
         </div>
-        <div class="download">
-          <i class='bx bx-download'></i>
-        </div>
+        
       </div>
       <div class="graph-values">
         <div class="graph">
@@ -71,19 +72,19 @@
           <ul>
             <li>
               <span>Salário normal</span>
-              <span>R$1.325,00</span>
+              <span class="valores">R$1.325,00</span>
             </li>
             <li>
               <span>Gratificação</span>
-              <span>R$410,00</span>
+              <span class="valores">R$410,00</span>
             </li>
             <li>
               <span>INSS</span>
-              <span>R$136,00</span>
+              <span class="valores">R$135,00</span>
             </li>
             <li>
               <span>Descontos</span>
-              <span>R$0</span>
+              <span class="valores">R$0</span>
             </li>
           </ul>
         </div>
