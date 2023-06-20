@@ -349,7 +349,7 @@ html {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding: 0 2rem 0 1rem;
+  padding: 0 2rem 0 2rem;
   font-size: 4rem;
 }
 .container .header-chat .texto h1 {
@@ -423,12 +423,7 @@ html {
 }
 .container .main-chat .digitemensagem form .group .upload {
   border: none;
-}
-.container .main-chat .digitemensagem form .upload {
   border-radius: 0 1.2rem 1.2rem 0;
-}
-.container .main-chat .digitemensagem form .enviar {
-  border-radius: 50%;
 }
 .container .main-chat .digitemensagem form .enviar,
 .container .main-chat .digitemensagem form .upload {
@@ -438,6 +433,9 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+.container .main-chat .digitemensagem form .enviar {
+  border-radius: 50%;
 }
 
 @media (min-width: 500px) and (max-width: 849px) {
@@ -615,5 +613,16 @@ html {
     padding: 0 0 0 1rem;
     gap: 0;
     font-size: 1.2rem;
+  }
+  .container .header-chat {
+    font-size: 3rem;
+    padding: 0 1rem 0 1rem;
+  }
+  .container .header-chat .texto h1 {
+    font-size: 2.5rem;
+  }
+  .container .digitemensagem form .group input {
+    width: 15rem;
+    height: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */

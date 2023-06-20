@@ -130,6 +130,26 @@
                     font-size: 1.2rem;
                 }
             }
+
+            .header-chat {
+                font-size: 3rem;
+                padding: 0 1rem 0 1rem;
+
+                .texto h1 {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .digitemensagem {
+                form {
+                    .group {
+                        input {
+                            width: 15rem;
+                            height: 4rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
