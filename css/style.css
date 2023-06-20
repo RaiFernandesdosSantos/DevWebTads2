@@ -116,14 +116,21 @@ html {
   font-size: 1.7rem;
   margin-bottom: 1rem;
 }
-.container #section .informacoes {
-  border: 2px solid magenta;
-  width: 50rem;
-  height: 10rem;
+.container #section .informacoes,
+.container #section .informacoes .info-r {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+}
+.container #section .informacoes {
+  border: 2px solid magenta;
+  width: 50rem;
+  height: 10rem;
+}
+.container #section .informacoes .info-l,
+.container #section .informacoes .info-r .info-group {
+  font-size: 2.3rem;
 }
 .container #section .informacoes .info-l {
   border: 2px solid salmon;
@@ -133,7 +140,6 @@ html {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  font-size: 2.3rem;
 }
 .container #section .informacoes .info-l span {
   color: lawngreen;
@@ -142,17 +148,12 @@ html {
   border: 2px solid khaki;
   width: 55%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
 }
 .container #section .informacoes .info-r .info-group {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  font-size: 2.3rem;
 }
 .container #section .informacoes .info-r .info-group .cima {
   text-align: left;
@@ -283,24 +284,21 @@ html {
   display: grid;
   grid-template-rows: 5rem repeat(4, 1fr);
 }
-.container .main-perfil .texto {
-  border: 2px solid blueviolet;
+.container .main-perfil .texto,
+.container .main-perfil .item-mp {
+  padding: 1rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  padding: 1rem;
-  font-size: 1.3rem;
+}
+.container .main-perfil .texto {
+  border: 2px solid blueviolet;
 }
 .container .main-perfil .item-mp {
   border: 2px solid hotpink;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
   gap: 2rem;
-  padding: 1rem;
-  font-size: 1.5rem;
 }
 .container .main-perfil .item-mp .text-group {
   width: 25rem;
@@ -320,14 +318,17 @@ html {
   display: grid;
   grid-template-rows: 5rem repeat(3, 1fr);
 }
+.container .footer-perfil .texto,
+.container .footer-perfil .item-fp {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
 .container .footer-perfil .texto {
   border: 2px solid blueviolet;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  padding: 1rem;
-  font-size: 1.3rem;
 }
 .container .footer-perfil .item-fp {
   border: 2px solid hotpink;
@@ -335,8 +336,6 @@ html {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding: 1rem;
-  font-size: 1.5rem;
   gap: 0.5rem;
 }
 .container .header-chat {
@@ -414,20 +413,22 @@ html {
   border-radius: 1.2rem;
   margin-right: 1rem;
 }
-.container .main-chat .digitemensagem form .group input {
-  height: 6rem;
-  width: 100rem;
-  border-radius: 1.2rem 0 0 1.2rem;
-  border: none;
-}
+.container .main-chat .digitemensagem form .group input,
 .container .main-chat .digitemensagem form .group .upload {
   border: none;
+}
+.container .main-chat .digitemensagem form .group input {
+  width: 100rem;
+  height: 6rem;
+  border-radius: 1.2rem 0 0 1.2rem;
+}
+.container .main-chat .digitemensagem form .group .upload {
   border-radius: 0 1.2rem 1.2rem 0;
 }
 .container .main-chat .digitemensagem form .enviar,
 .container .main-chat .digitemensagem form .upload {
-  height: 6rem;
   width: 6rem;
+  height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -89,16 +89,24 @@
       margin-bottom: 1rem;
     }
 
+    .informacoes,
+    .informacoes .info-r {
+      @include functions.flex(center, flex-start, row);
+    }
+
     .informacoes {
       border: 2px solid magenta;
       @include functions.alturaLargura(50rem, 10rem);
-      @include functions.flex(center, flex-start, row);
+
+      .info-l,
+      .info-r .info-group {
+        font-size: 2.3rem;
+      }
 
       .info-l {
         border: 2px solid salmon;
         @include functions.alturaLargura(45%, 100%);
         @include functions.flex(flex-start, center, column);
-        font-size: 2.3rem;
 
         span {
           color: lawngreen;
@@ -108,11 +116,9 @@
       .info-r {
         border: 2px solid khaki;
         @include functions.alturaLargura(55%, 100%);
-        @include functions.flex(center, flex-start, row);
 
         .info-group {
           @include functions.flex(center, flex-start, column);
-          font-size: 2.3rem;
 
           .cima {
             text-align: left;
@@ -232,19 +238,20 @@
     display: grid;
     grid-template-rows: 5rem repeat(4, 1fr);
 
+    .texto,
+    .item-mp {
+      padding: 1rem;
+      font-size: 1.5rem;
+      @include functions.flex(center, flex-start, row);
+    }
+
     .texto {
       border: 2px solid blueviolet;
-      @include functions.flex(center, flex-start, row);
-      padding: 1rem;
-      font-size: 1.3rem;
     }
 
     .item-mp {
       border: 2px solid hotpink;
-      @include functions.flex(center, flex-start, row);
       gap: 2rem;
-      padding: 1rem;
-      font-size: 1.5rem;
 
       .text-group {
         width: 25rem;
@@ -266,18 +273,20 @@
     display: grid;
     grid-template-rows: 5rem repeat(3, 1fr);
 
+    .texto,
+    .item-fp {
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+
     .texto {
       border: 2px solid blueviolet;
       @include functions.flex(center, flex-start, row);
-      padding: 1rem;
-      font-size: 1.3rem;
     }
 
     .item-fp {
       border: 2px solid hotpink;
       @include functions.flex(flex-start, center, column);
-      padding: 1rem;
-      font-size: 1.5rem;
       gap: 0.5rem;
     }
   }
@@ -311,8 +320,7 @@
 
       .generica {
         @include functions.flex(center, center, row);
-        width: 40%;
-        height: 10rem;
+        @include functions.alturaLargura(40%, 10rem);
         border: solid 2px black;
         font-size: 1.5rem;
         text-align: justify;
@@ -339,23 +347,24 @@
           border-radius: 1.2rem;
           margin-right: 1rem;
 
-          input {
-            height: 6rem;
-            width: 100rem;
-            border-radius: 1.2rem 0 0 1.2rem;
+          input,
+          .upload {
             border: none;
           }
 
+          input {
+            @include functions.alturaLargura(100rem, 6rem);
+            border-radius: 1.2rem 0 0 1.2rem;
+          }
+
           .upload {
-            border: none;
             border-radius: 0 1.2rem 1.2rem 0;
           }
         }
 
         .enviar,
         .upload {
-          height: 6rem;
-          width: 6rem;
+          @include functions.alturaLargura(6rem, 6rem);
           @include functions.flex(center, center, row);
         }
 
@@ -365,11 +374,7 @@
       }
     }
   }
-
 }
-
-
-
 
 @include tablet.tablet;
 @include cell.celular;
