@@ -393,7 +393,7 @@ html {
   border: solid 2px purple;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
 }
 .container .main-chat .digitemensagem form {
@@ -412,13 +412,14 @@ html {
   flex-direction: row;
   border: 2px solid black;
   border-radius: 1.2rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 .container .main-chat .digitemensagem form .group input {
   height: 6rem;
-  width: 80rem;
+  width: 100rem;
   border-radius: 1.2rem 0 0 1.2rem;
   border: none;
+  padding-left: 2rem;
 }
 .container .main-chat .digitemensagem form .group .upload {
   border: none;
