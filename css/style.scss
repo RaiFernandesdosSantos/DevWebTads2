@@ -281,7 +281,68 @@
       gap: 0.5rem;
     }
   }
-}
+
+  .header-chat{
+    border: solid 2px blue;
+    @include functions.posicaoGrid(1, 4, 1, 17);
+    @include functions.flex(center, space-between, row);
+    padding: 0 2rem 0 1rem;
+    font-size: 3rem;
+
+    .texto h1{
+      font-size: 3rem;
+    }
+    .logo i{
+      font-size: 4rem;
+      color: functions.$laranja;
+    }
+  }
+
+  .main-chat{
+    @include functions.posicaoGrid(4, 17, 1, 17);
+    display: grid;
+    grid-template-rows: 80% 20%;
+    border: solid 2px red;
+    padding: 0 1rem 0 1rem;
+
+    .chatbox{
+      @include functions.flex(flex-end, flex-start,row);
+
+      .generica{
+        width: 40%;
+        height: 10rem;
+        border: solid 2px black;
+        font-size: 1.5rem;
+        padding: 1rem;
+        border-radius: 0 1.2rem 1.2rem 1.2rem;
+      }
+    }
+
+    .digitemensagem{
+      border: solid 2px purple;
+      @include functions.flex(center, space-between, row);
+
+      input{
+        height: 6rem;
+        width: 60rem;
+        border-radius: 1.2rem; 
+      }
+      
+      button, .upload{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+      }
+      i{
+        font-size: 1.75rem;
+      }
+      
+    }
+  }
+  
+  }
+
+
 
 
 @include tablet.tablet;
