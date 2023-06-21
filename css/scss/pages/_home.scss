@@ -26,12 +26,12 @@
     /* Aside style - Page Home */
 
     #aside {
-        border-right: .1rem solid black;
+        border-right: .1rem solid functions.$fonte;
         @include functions.posicaoGrid(1, 17, 1, 3);
         @include functions.flex(flex-start, flex-start, column);
 
         .perfil {
-            border-bottom: .1rem solid black;
+            border-bottom: .1rem solid functions.$fonte;
             @include functions.alturaLargura(100%, 30rem);
             @include functions.flex(center, center, column);
 
@@ -87,7 +87,7 @@
         }
 
         .informacoes {
-            border: .1rem solid black;
+            border: .1rem solid functions.$fonte;
             @include functions.alturaLargura(60%, 60%);
 
             .info-l,
@@ -97,12 +97,12 @@
             }
 
             .info-l {
-                border-right: .1rem solid black;
+                border-right: .1rem solid functions.$fonte;
                 @include functions.alturaLargura(45%, 100%);
                 @include functions.flex(flex-start, center, column);
 
                 span {
-                    color: lawngreen;
+                    color: functions.$verde;
                 }
             }
 
@@ -144,13 +144,13 @@
         .table {
             @include functions.alturaLargura(100%, calc(100% - 4rem));
             @include functions.grid(11, 1fr, 1, 1fr);
-            border: .1rem solid black;
+            border: .1rem solid functions.$fonte;
 
             .row {
                 @include functions.grid(1, 1fr, 6, 1fr);
 
                 .cell {
-                    border: .1rem solid black;
+                    border: .1rem solid functions.$fonte;
                     @include functions.flex(center, center, column);
                     font-size: 1.5rem;
 
