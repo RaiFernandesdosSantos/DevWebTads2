@@ -790,7 +790,7 @@ html {
     grid-row-end: 15;
     grid-column-start: 1;
     grid-column-end: 17;
-    overflow: hidden;
+    overflow: scroll;
   }
   .container #footer {
     grid-row-start: 15;

@@ -52,7 +52,7 @@
 
             #main {
                 @include functions.posicaoGrid(6, 15, 1, 17);
-                overflow: hidden;
+                overflow: scroll;
             }
 
             #footer {
