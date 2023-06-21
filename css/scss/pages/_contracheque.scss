@@ -21,15 +21,14 @@
                 @include functions.flex(center, space-between, row);
                 width: 20rem;
                 height: 4rem;
-                padding: 1rem;
 
                 select {
                     font-size: 2rem;
                 }
-            }
 
-            .download {
-                font-size: 3rem;
+                .download {
+                    font-size: 3rem;
+                }
             }
         }
 
@@ -44,30 +43,33 @@
 
                 i {
                     font-size: 15rem;
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
                 }
 
                 span {
-                    margin: 1rem 0;
+                    margin-bottom: 1rem;
                     font-weight: 500;
                 }
             }
 
             .values {
-                font-size: 2rem;
                 padding: 1rem;
                 @include functions.flex(center, center, column);
 
                 ul {
                     width: 100%;
-                }
 
-                li {
-                    @include functions.flex(center, space-between, row);
-                    height: 4rem;
+                    li {
+                        @include functions.flex(center, space-between, row);
+                        height: 4rem;
 
-                    .valores {
-                        font-weight: 500;
+                        span {
+                            font-size: 2rem;
+                        }
+
+                        .valores {
+                            font-weight: bold;
+                        }
                     }
                 }
             }
