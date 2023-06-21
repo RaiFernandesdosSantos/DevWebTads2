@@ -23,7 +23,9 @@
       <!-- Menu Icon -->
 
       <div class="menu">
-        <i class='bx bx-menu'><input type="checkbox" id="menu"></i>
+        <button type="button" id="btn-menu">
+          <i class='bx bx-menu'></i>
+        </button>
       </div>
 
       <!-- Logo -->
@@ -288,6 +290,15 @@
       </a>
     </footer>
   </div>
+
+  <script>
+    var btn = document.getElementById("btn-menu");
+    var menu = document.getElementById("aside");
+
+    btn.addEventListener("click", function (event) {
+      menu.style.display = "block";
+    });
+  </script>
 </body>
 
 </html>
