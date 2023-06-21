@@ -23,21 +23,6 @@ html {
   display: grid;
   grid-template-rows: repeat(16, 1fr);
   grid-template-columns: repeat(16, 1fr);
-  /* Style Home Page */
-  /* Header style - Page Home */
-  /* Aside style - Page Home */
-  /* Section styel - Page Home */
-  /* Main style - Page Home */
-  /* Footer style - Page Home */
-  /* Style Configuracoes Page */
-  /* Header style - Page Connfiguracoes */
-  /* Main style - Page Configuracoes */
-  /* Footer style - Page configuracoes */
-  /* Style Chat Page */
-  /* Style header Chat */
-  /* Main style - Page Chat */
-  /* Style Contracheque Page */
-  /* Main style - Page Contracheque*/
 }
 .container #header {
   display: flex;
@@ -812,4 +797,4 @@ html {
   .container .main-contracheque .values ul li span {
     font-size: 0.8rem;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
