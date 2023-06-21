@@ -28,25 +28,47 @@
 
     <!-- Form to login -->
 
-    <form action="">
+    <form id="form-login">
 
       <!-- Username input -->
 
       <div class="input-group">
         <label for="user">Usuário: </label>
-        <input type="text" name="user" placeholder="Nome de Usuário">
+        <input type="text" name="user" id="user" placeholder="Nome de Usuário">
       </div>
 
       <!-- Password input -->
 
       <div class="input-group">
         <label for="senha">Senha: </label>
-        <input type="password" placeholder="Senha" name="senha">
+        <input type="password" placeholder="Senha" id="senha" name="senha">
       </div>
 
       <!-- Button Submit-->
 
-      <button type="submit">Fazer Login</button>
+      <button type="submit" id="btn-submit">Fazer Login</button>
     </form>
   </div>
+
+  <script>
+    var formulario = document.getElementById("form-login");
+    var userInput = document.getElementById("user");
+    var senhaInput = document.getElementById("senha");
+
+    formulario.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var user = userInput.value;
+      var senha = senhaInput.value;
+
+      if (user == "user" && senha == "1234") {
+        window.location.href = "home.html";
+      }
+      else {
+        alert("Usuario ou senha incorreta!");
+      }
+    });
+  </script>
 </body>
+
+</html>

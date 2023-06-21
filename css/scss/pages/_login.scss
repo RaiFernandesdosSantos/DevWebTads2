@@ -45,10 +45,11 @@
                 }
 
                 button {
-                    @include functions.alturaLargura(11rem, 3rem);
+                    @include functions.alturaLargura(11rem, 4rem);
                     border-radius: .7rem;
                     margin-top: 1rem;
                     border: none;
+                    font-size: 1.5rem;
                 }
             }
         }

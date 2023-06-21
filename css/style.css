@@ -313,10 +313,22 @@ html {
 .container .main-perfil .item-mp .text-group {
   width: 25rem;
 }
-.container .main-perfil .item-mp .text-group input {
-  border: none;
+.container .main-perfil .item-mp .text-group form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
-.container .main-perfil .item-mp i {
+.container .main-perfil .item-mp .text-group form input {
+  border: none;
+  width: 17rem;
+  height: 2rem;
+}
+.container .main-perfil .item-mp .text-group form button {
+  border: none;
+  background: white;
+}
+.container .main-perfil .item-mp .text-group form button i {
   font-size: 3rem;
 }
 .container .footer-perfil {
@@ -580,10 +592,11 @@ html {
 }
 #body .loginbox form button {
   width: 11rem;
-  height: 3rem;
+  height: 4rem;
   border-radius: 0.7rem;
   margin-top: 1rem;
   border: none;
+  font-size: 1.5rem;
 }
 
 /* Imports of the medias queries */
@@ -806,9 +819,9 @@ html {
     font-size: 1.2rem;
   }
   .container .main-perfil .item-mp .text-group {
-    width: 50%;
+    width: 75%;
   }
-  .container .main-perfil .item-mp i {
+  .container .main-perfil .item-mp .text-group form button i {
     font-size: 2.5rem;
   }
   .container .footer-perfil {
