@@ -229,9 +229,11 @@
 
                 form {
                     @include functions.alturaLargura(26rem, 23rem);
+                    border: 2px solid black;
 
                     label {
                         font-size: 1.7rem;
+                        margin-bottom: 1rem;
                     }
 
                     input {
