@@ -4,8 +4,7 @@
     /* Header style - Page Connfiguracoes */
 
     .header-perfil {
-        border: 2px solid red;
-        @include functions.posicaoGrid(1, 4, 1, 17);
+        @include functions.posicaoGrid(1, 5, 1, 17);
         display: grid;
         grid-template-rows: 1fr 3fr;
 
@@ -18,9 +17,10 @@
 
         .volta {
             gap: 1rem;
+            font-size: .9rem;
 
             i {
-                font-size: 3rem;
+                font-size: 2.2rem;
             }
         }
 
@@ -28,13 +28,13 @@
             justify-content: center;
 
             #perfil {
-                font-size: 10rem;
+                font-size: 8rem;
             }
 
             #camera {
-                font-size: 4rem;
+                font-size: 3rem;
                 position: absolute;
-                top: 13%;
+                top: 18%;
                 left: 51%;
                 color: orange;
             }
@@ -44,15 +44,14 @@
     /* Main style - Page Configuracoes */
 
     .main-perfil {
-        border: 2px solid blue;
-        @include functions.posicaoGrid(4, 12, 1, 17);
+        @include functions.posicaoGrid(5, 12, 1, 17);
         display: grid;
-        grid-template-rows: 5rem repeat(4, 1fr);
+        grid-template-rows: 4rem repeat(4, 1fr);
 
         .texto,
         .item-mp {
-            padding: 1rem;
-            font-size: 1.5rem;
+            padding: 0 1rem 0 1rem;
+            font-size: 1.2rem;
             @include functions.flex(center, flex-start, row);
         }
 
@@ -73,7 +72,7 @@
             }
 
             i {
-                font-size: 3.5rem;
+                font-size: 3rem;
             }
         }
     }
@@ -81,15 +80,14 @@
     /* Footer style - Page configuracoes */
 
     .footer-perfil {
-        border: 2px solid green;
         @include functions.posicaoGrid(12, 17, 1, 17);
         display: grid;
-        grid-template-rows: 5rem repeat(3, 1fr);
+        grid-template-rows: 4rem repeat(3, 1fr);
 
         .texto,
         .item-fp {
-            padding: 1rem;
-            font-size: 1.5rem;
+            padding: 0 1rem 0 1rem;
+            font-size: 1.2rem;
         }
 
         .texto {
@@ -101,21 +99,6 @@
             border: 2px solid hotpink;
             @include functions.flex(flex-start, center, column);
             gap: 0.5rem;
-        }
-    }
-
-    .header-chat {
-        border: solid 2px blue;
-        @include functions.flex(center, space-between, row);
-        font-size: 4rem;
-
-        .texto h1 {
-            font-size: 3rem;
-        }
-
-        .logo i {
-            font-size: 5rem;
-            color: functions.$laranja;
         }
     }
 }

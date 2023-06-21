@@ -4,9 +4,7 @@
     /* Header style - Page Home */
 
     #header {
-        border: 2px solid red;
         @include functions.flex(center, flex-end, row);
-
 
         .chat,
         .logo {
@@ -75,7 +73,6 @@
     /* Section styel - Page Home */
 
     #section {
-        border: 2px solid green;
         padding: 0 2rem 0 2rem;
         @include functions.flex(flex-start, center, column);
         @include functions.posicaoGrid(3, 6, 3, 17);
@@ -92,7 +89,7 @@
 
         .informacoes {
             border: 2px solid magenta;
-            @include functions.alturaLargura(50rem, 10rem);
+            @include functions.alturaLargura(60%, 60%);
 
             .info-l,
             .info-r .info-group {
@@ -132,12 +129,10 @@
     /* Main style - Page Home */
 
     #main {
-        border: 2px solid blue;
         @include functions.posicaoGrid(6, 15, 3, 17);
-        overflow: hidden;
+        overflow: scroll;
 
         .main-header {
-            border: 2px solid khaki;
             @include functions.alturaLargura(100%, 4rem);
             @include functions.flex(center, space-between, row);
             padding: 0 2rem 0 2rem;
@@ -148,7 +143,6 @@
         }
 
         .table {
-            border: 2px solid teal;
             @include functions.alturaLargura(100%, calc(100% - 4rem));
             @include functions.grid(11, 1fr, 1, 1fr);
 
@@ -172,7 +166,6 @@
     /* Footer style - Page Home */
 
     #footer {
-        border: 2px solid yellow;
         @include functions.posicaoGrid(15, 17, 3, 17);
         @include functions.flex(center, space-between, row);
 

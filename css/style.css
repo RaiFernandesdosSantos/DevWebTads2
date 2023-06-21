@@ -34,12 +34,12 @@ html {
   /* Main style - Page Configuracoes */
   /* Footer style - Page configuracoes */
   /* Style Chat Page */
+  /* Style header Chat */
   /* Main style - Page Chat */
   /* Style Contracheque Page */
   /* Main style - Page Contracheque*/
 }
 .container #header {
-  border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -113,7 +113,6 @@ html {
   font-weight: bold;
 }
 .container #section {
-  border: 2px solid green;
   padding: 0 2rem 0 2rem;
   display: flex;
   align-items: flex-start;
@@ -137,8 +136,8 @@ html {
 }
 .container #section .informacoes {
   border: 2px solid magenta;
-  width: 50rem;
-  height: 10rem;
+  width: 60%;
+  height: 60%;
 }
 .container #section .informacoes .info-l,
 .container #section .informacoes .info-r .info-group {
@@ -176,15 +175,13 @@ html {
   font-size: 5rem;
 }
 .container #main {
-  border: 2px solid blue;
   grid-row-start: 6;
   grid-row-end: 15;
   grid-column-start: 3;
   grid-column-end: 17;
-  overflow: hidden;
+  overflow: scroll;
 }
 .container #main .main-header {
-  border: 2px solid khaki;
   width: 100%;
   height: 4rem;
   display: flex;
@@ -197,7 +194,6 @@ html {
   font-size: 2.5rem;
 }
 .container #main .table {
-  border: 2px solid teal;
   width: 100%;
   height: calc(100% - 4rem);
   display: grid;
@@ -222,7 +218,6 @@ html {
   font-size: 3rem;
 }
 .container #footer {
-  border: 2px solid yellow;
   grid-row-start: 15;
   grid-row-end: 17;
   grid-column-start: 3;
@@ -259,9 +254,8 @@ html {
   padding: 0 2rem 0 2rem;
 }
 .container .header-perfil {
-  border: 2px solid red;
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 17;
   display: grid;
@@ -278,36 +272,36 @@ html {
 }
 .container .header-perfil .volta {
   gap: 1rem;
+  font-size: 0.9rem;
 }
 .container .header-perfil .volta i {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 .container .header-perfil .foto {
   justify-content: center;
 }
 .container .header-perfil .foto #perfil {
-  font-size: 10rem;
+  font-size: 8rem;
 }
 .container .header-perfil .foto #camera {
-  font-size: 4rem;
+  font-size: 3rem;
   position: absolute;
-  top: 13%;
+  top: 18%;
   left: 51%;
   color: orange;
 }
 .container .main-perfil {
-  border: 2px solid blue;
-  grid-row-start: 4;
+  grid-row-start: 5;
   grid-row-end: 12;
   grid-column-start: 1;
   grid-column-end: 17;
   display: grid;
-  grid-template-rows: 5rem repeat(4, 1fr);
+  grid-template-rows: 4rem repeat(4, 1fr);
 }
 .container .main-perfil .texto,
 .container .main-perfil .item-mp {
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding: 0 1rem 0 1rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -327,21 +321,20 @@ html {
   border: none;
 }
 .container .main-perfil .item-mp i {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .container .footer-perfil {
-  border: 2px solid green;
   grid-row-start: 12;
   grid-row-end: 17;
   grid-column-start: 1;
   grid-column-end: 17;
   display: grid;
-  grid-template-rows: 5rem repeat(3, 1fr);
+  grid-template-rows: 4rem repeat(3, 1fr);
 }
 .container .footer-perfil .texto,
 .container .footer-perfil .item-fp {
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding: 0 1rem 0 1rem;
+  font-size: 1.2rem;
 }
 .container .footer-perfil .texto {
   border: 2px solid blueviolet;
@@ -359,6 +352,10 @@ html {
   gap: 0.5rem;
 }
 .container .header-chat {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 17;
   border: solid 2px blue;
   display: flex;
   align-items: center;
@@ -433,7 +430,7 @@ html {
   border: none;
 }
 .container .main-chat .digitemensagem form .group input {
-  width: 100rem;
+  width: 80rem;
   height: 6rem;
   border-radius: 1.2rem 0 0 1.2rem;
 }
@@ -559,13 +556,13 @@ html {
   }
   .container #section .informacoes {
     width: 90%;
-    height: 10rem;
+    height: 60%;
   }
   .container #section .informacoes .info-l {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .container #section .informacoes .info-r .info-group {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .container #main {
     grid-row-start: 6;
