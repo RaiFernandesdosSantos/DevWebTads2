@@ -1,7 +1,7 @@
 @use "../functions";
 
 @mixin main {
-    body {
+    #body {
         @include functions.flex(center, center, row);
         @include functions.alturaLargura(100%, 100vh);
 
@@ -28,7 +28,7 @@
 
             form {
                 @include functions.flex(flex-start, center, column);
-                @include functions.alturaLargura(50%, 20rem);
+                @include functions.alturaLargura(54%, 22rem);
                 font-size: 2rem;
 
                 label {
@@ -36,7 +36,7 @@
                 }
 
                 input {
-                    @include functions.alturaLargura(24rem, 3rem);
+                    @include functions.alturaLargura(30rem, 3rem);
                     font-size: 1.5rem;
                     border-radius: 1rem;
                     border: .1rem solid functions.$fonte;

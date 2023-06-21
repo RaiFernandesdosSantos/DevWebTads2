@@ -213,5 +213,38 @@
                 }
             }
         }
+
+        #body {
+            .loginbox {
+                @include functions.alturaLargura(32rem, 43rem);
+
+                .logo {
+                    font-size: 6rem;
+                    @include functions.alturaLargura(11rem, 11rem);
+                }
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                form {
+                    @include functions.alturaLargura(26rem, 23rem);
+
+                    label {
+                        font-size: 1.7rem;
+                    }
+
+                    input {
+                        @include functions.alturaLargura(24rem, 3rem);
+                        font-size: 1.5rem;
+                    }
+
+                    button {
+                        @include functions.alturaLargura(12rem, 4rem);
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
     }
 }

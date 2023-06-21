@@ -109,5 +109,21 @@
                 }
             }
         }
+
+        #body {
+            .loginbox {
+                form {
+                    input {
+                        @include functions.alturaLargura(31rem, 4rem);
+                        font-size: 2rem;
+                    }
+
+                    button {
+                        @include functions.alturaLargura(15rem, 4rem);
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
     }
 }

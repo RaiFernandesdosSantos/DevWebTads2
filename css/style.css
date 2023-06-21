@@ -523,7 +523,7 @@ html {
 }
 
 /* Style login page */
-body {
+#body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -531,7 +531,7 @@ body {
   width: 100%;
   height: 100vh;
 }
-body .loginbox {
+#body .loginbox {
   border: 0.1rem solid black;
   display: flex;
   align-items: center;
@@ -540,7 +540,7 @@ body .loginbox {
   width: 60rem;
   height: 50rem;
 }
-body .loginbox .logo {
+#body .loginbox .logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -551,26 +551,26 @@ body .loginbox .logo {
   background-color: lightgrey;
   margin-bottom: 2rem;
 }
-body .loginbox .logo i {
+#body .loginbox .logo i {
   color: orange;
 }
-body .loginbox h1 {
+#body .loginbox h1 {
   font-size: 2.5rem;
 }
-body .loginbox form {
+#body .loginbox form {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
-  height: 20rem;
+  width: 54%;
+  height: 22rem;
   font-size: 2rem;
 }
-body .loginbox form label {
+#body .loginbox form label {
   margin-bottom: 0.5rem;
 }
-body .loginbox form input {
-  width: 24rem;
+#body .loginbox form input {
+  width: 30rem;
   height: 3rem;
   font-size: 1.5rem;
   border-radius: 1rem;
@@ -578,7 +578,7 @@ body .loginbox form input {
   margin-bottom: 1rem;
   padding: 0.5rem;
 }
-body .loginbox form button {
+#body .loginbox form button {
   width: 11rem;
   height: 3rem;
   border-radius: 0.7rem;
@@ -681,6 +681,16 @@ body .loginbox form button {
   }
   .container .main-contracheque .values ul li span {
     font-size: 1.3rem;
+  }
+  #body .loginbox form input {
+    width: 31rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+  #body .loginbox form button {
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 499px) {
@@ -875,5 +885,34 @@ body .loginbox form button {
   }
   .container .main-contracheque .values ul li span {
     font-size: 0.8rem;
+  }
+  #body .loginbox {
+    width: 32rem;
+    height: 43rem;
+  }
+  #body .loginbox .logo {
+    font-size: 6rem;
+    width: 11rem;
+    height: 11rem;
+  }
+  #body .loginbox h1 {
+    font-size: 2rem;
+  }
+  #body .loginbox form {
+    width: 26rem;
+    height: 23rem;
+  }
+  #body .loginbox form label {
+    font-size: 1.7rem;
+  }
+  #body .loginbox form input {
+    width: 24rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  #body .loginbox form button {
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.4rem;
   }
 }/*# sourceMappingURL=style.css.map */
