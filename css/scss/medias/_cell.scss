@@ -17,7 +17,6 @@
                 .menu,
                 .chat,
                 .logo {
-                    border: 2px solid black;
                     @include functions.alturaLargura(30%, 100%);
                     @include functions.flex(center, center, row);
                     font-size: 3rem;
@@ -165,6 +164,53 @@
                         .upload {
                             height: 4rem;
                             width: 4rem;
+                        }
+                    }
+                }
+            }
+
+            .main-contracheque {
+                @include functions.posicaoGrid(3, 15, 1, 17);
+
+                .selectmonth {
+                    padding: 0 1rem 0 1rem;
+
+                    span {
+                        font-size: 2.3rem;
+                    }
+
+                    .select {
+                        @include functions.alturaLargura(15rem, 3rem);
+
+                        .download {
+                            font-size: 2.8rem;
+                        }
+                    }
+                }
+
+                .graph-values {
+                    padding: 0 1rem 0 1rem;
+                    @include functions.grid(2, 1fr, 1, 1fr);
+
+                    .graph {
+                        font-size: 1.8rem;
+                        border: none;
+                        border-bottom: .1rem solid black;
+
+                        i {
+                            font-size: 10rem;
+                        }
+                    }
+                }
+
+                .values {
+                    padding: 0 1rem 0 1rem;
+
+                    ul {
+                        li {
+                            span {
+                                font-size: .8rem;
+                            }
                         }
                     }
                 }

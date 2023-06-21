@@ -62,6 +62,53 @@
                     }
                 }
             }
+
+            .main-contracheque {
+                @include functions.posicaoGrid(3, 15, 5, 17);
+
+                .selectmonth {
+                    padding: 0 1rem 0 1rem;
+
+                    span {
+                        font-size: 3rem;
+                    }
+
+                    .select {
+                        @include functions.alturaLargura(15rem, 4rem);
+
+                        .download {
+                            font-size: 3.3rem;
+                        }
+                    }
+                }
+
+                .graph-values {
+                    padding: 0 1rem 0 1rem;
+                    @include functions.grid(2, 1fr, 1, 1fr);
+
+                    .graph {
+                        font-size: 2.3rem;
+                        border: none;
+                        border-bottom: .1rem solid black;
+
+                        i {
+                            font-size: 15rem;
+                        }
+                    }
+                }
+
+                .values {
+                    padding: 0 1rem 0 1rem;
+
+                    ul {
+                        li {
+                            span {
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
