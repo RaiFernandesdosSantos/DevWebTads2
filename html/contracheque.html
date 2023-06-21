@@ -5,7 +5,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Contracheque</title>
+
+  <!-- External CSS stylesheets-->
 
   <link rel="stylesheet" href="../css/style.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -13,21 +16,33 @@
 
 <body>
   <div class="container">
+    <!-- Header -->
+
     <header id="header">
+      <!-- Menu Icon -->
+
       <div class="menu">
         <i class='bx bx-menu'></i>
       </div>
 
+      <!-- Logo -->
+
       <div class="logo">
         <i class="bx bxl-xing"></i>
       </div>
+
+      <!-- Chat Icon-->
 
       <div class="chat">
         <a href="chat.html"><i class="bx bxs-chat"></i></a>
       </div>
     </header>
 
+    <!-- Sidebar -->
+
     <aside id="aside">
+      <!-- User Profile-->
+
       <div class="perfil">
         <i class="bx bxs-user-circle"></i>
 
@@ -36,6 +51,8 @@
           <span class="cpf">038.998.181-80</span>
         </div>
       </div>
+
+      <!-- Menu -->
 
       <div class="menu">
         <h2>Modulos</h2>
@@ -46,8 +63,13 @@
       </div>
     </aside>
 
+    <!-- Main Section -->
+
     <main class="main-contracheque">
       <div class="selectmonth">
+
+        <!-- Select Input for choosing month and year -->
+
         <span>Contracheque</span>
         <div class="select">
           <select name="mes-ano" id="">
@@ -56,19 +78,29 @@
             <option value="">04-2023</option>
             <option value="">03-2023</option>
           </select>
+
+          <!-- Download Button -->
+
           <div class="download" onclick="alert('Realizando download referente ao mês selecionado')">
             <i class='bx bx-download'></i>
           </div>
         </div>
 
       </div>
+
       <div class="graph-values">
+
+        <!-- Graph and salary informations-->
+
         <div class="graph">
           <i class='bx bx-table'></i>
           <span>Salário líquido:</span>
           <span>R$1.600,00</span>
         </div>
         <div class="values">
+
+          <!-- List of salary components -->
+
           <ul>
             <li>
               <span>Salário normal</span>
@@ -91,18 +123,26 @@
       </div>
     </main>
 
+    <!-- Footer -->
+
     <footer id="footer">
-      <a href="index.html" class="footer-item">
+      <!-- Home icon -->
+
+      <a href="home.html" class="footer-item">
         <i class="bx bx-alarm"></i>
 
         <span>Ponto</span>
       </a>
+
+      <!-- Contracheque icon -->
 
       <div class="footer-item selecionado">
         <i class="bx bx-folder-open"></i>
 
         <span>Contracheque</span>
       </div>
+
+      <!-- Notificacoes icon -->
 
       <a href="notificacoes.html" class="footer-item">
         <i class="bx bxs-bell"></i>
