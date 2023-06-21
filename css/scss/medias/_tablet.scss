@@ -116,6 +116,7 @@
                     input {
                         @include functions.alturaLargura(31rem, 4rem);
                         font-size: 2rem;
+                        border: .1rem solid functions.$fonte;
                     }
 
                     button {

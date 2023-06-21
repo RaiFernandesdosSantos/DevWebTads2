@@ -62,23 +62,13 @@
             .text-group {
                 width: 25rem;
 
-                form {
-                    @include functions.flex(center, space-between, row);
-
-                    input {
-                        border: none;
-                        @include functions.alturaLargura(17rem, 2rem);
-                    }
-
-                    button {
-                        border: none;
-                        background: white;
-
-                        i {
-                            font-size: 3rem;
-                        }
-                    }
+                input {
+                    border: none;
                 }
+            }
+
+            i {
+                font-size: 3rem;
             }
         }
     }

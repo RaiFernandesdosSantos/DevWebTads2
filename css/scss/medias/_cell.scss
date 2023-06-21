@@ -105,15 +105,11 @@
                     font-size: 1.2rem;
 
                     .text-group {
-                        width: 75%;
+                        width: 50%;
+                    }
 
-                        form {
-                            button {
-                                i {
-                                    font-size: 2.5rem
-                                }
-                            }
-                        }
+                    i {
+                        font-size: 2.5rem
                     }
                 }
             }
@@ -233,9 +229,11 @@
 
                 form {
                     @include functions.alturaLargura(26rem, 23rem);
+                    border: 2px solid black;
 
                     label {
                         font-size: 1.7rem;
+                        margin-bottom: 1rem;
                     }
 
                     input {
