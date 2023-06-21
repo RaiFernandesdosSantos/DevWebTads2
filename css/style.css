@@ -105,6 +105,7 @@ html {
 .container #aside .menu h1,
 .container #aside .menu h2 {
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 .container #aside .menu a {
   font-size: 2rem;
@@ -534,10 +535,16 @@ html {
   font-size: 3rem;
   justify-self: center;
 }
-.container .main-notificacoes .notification-box {
+.container .main-notificacoes .notificacoes {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
+}
+.container .main-notificacoes .notificacoes .notification-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: row;
   width: 100%;
   height: 4rem;
@@ -545,23 +552,16 @@ html {
   padding: 1rem;
   border: solid 1px black;
 }
-.container .main-notificacoes i {
+.container .main-notificacoes .notificacoes .notification-box i {
   font-size: 4rem;
+  color: red;
 }
-.container .main-notificacoes span {
+.container .main-notificacoes .notificacoes .notification-box #ausencia {
   text-decoration: underline;
-}
-.container .main-notificacoes #vermelho {
   color: red;
 }
-.container .main-notificacoes #amarelo {
-  color: yellow;
-}
-.container .main-notificacoes #ausencia {
-  color: red;
-}
-.container .main-notificacoes #inconsistencia {
-  color: yellow;
+.container .main-notificacoes .notificacoes .notification-box .quando {
+  text-decoration: underline;
 }
 
 /* Style login page */
@@ -754,9 +754,14 @@ html {
   .container #header .menu {
     display: block;
   }
-  .container #header .menu,
+  .container #header .menu button {
+    border: none;
+    background-color: white;
+    font-size: 3rem;
+  }
   .container #header .chat,
-  .container #header .logo {
+  .container #header .logo,
+  .container #header .menu {
     width: 30%;
     height: 100%;
     display: flex;
@@ -766,11 +771,28 @@ html {
     font-size: 3rem;
   }
   .container #aside {
-    grid-row-start: 1;
-    grid-row-end: 17;
-    grid-column-start: 1;
-    grid-column-end: 4;
     display: none;
+    background-color: white;
+    position: absolute;
+    width: 50%;
+  }
+  .container #aside .perfil {
+    width: 100%;
+    height: 20rem;
+  }
+  .container #aside .perfil i {
+    font-size: 8rem;
+  }
+  .container #aside .menu {
+    width: 100%;
+    height: 46rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .container #aside .menu a {
+    font-size: 1.5rem;
   }
   .container #section {
     grid-row-start: 3;
@@ -928,8 +950,6 @@ html {
   .container .main-contracheque .values ul li span {
     font-size: 0.8rem;
   }
-<<<<<<< HEAD
-=======
   #body .loginbox {
     width: 32rem;
     height: 43rem;
@@ -961,5 +981,4 @@ html {
     height: 4rem;
     font-size: 1.4rem;
   }
->>>>>>> 7ee3bf2faf5f58e4b3258baca055e9741a89041b
 }/*# sourceMappingURL=style.css.map */

@@ -12,11 +12,17 @@
 
                 .menu {
                     display: block;
+
+                    button {
+                        border: none;
+                        background-color: white;
+                        font-size: 3rem;
+                    }
                 }
 
-                .menu,
                 .chat,
-                .logo {
+                .logo,
+                .menu {
                     @include functions.alturaLargura(30%, 100%);
                     @include functions.flex(center, center, row);
                     font-size: 3rem;
@@ -24,8 +30,27 @@
             }
 
             #aside {
-                @include functions.posicaoGrid(1, 17, 1, 4);
                 display: none;
+                background-color: white;
+                position: absolute;
+                width: 50%;
+
+                .perfil {
+                    @include functions.alturaLargura(100%, 20rem);
+
+                    i {
+                        font-size: 8rem;
+                    }
+                }
+
+                .menu {
+                    @include functions.alturaLargura(100%, 46rem);
+                    @include functions.flex(flex-start, flex-start, column);
+
+                    a {
+                        font-size: 1.5rem;
+                    }
+                }
             }
 
             #section {
