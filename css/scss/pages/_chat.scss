@@ -5,7 +5,6 @@
 
     .header-chat {
         @include functions.posicaoGrid(1, 3, 1, 17);
-        border: solid 2px blue;
         @include functions.flex(center, space-between, row);
         font-size: 4rem;
 
@@ -25,8 +24,8 @@
         @include functions.posicaoGrid(3, 17, 1, 17);
         display: grid;
         grid-template-rows: 85% 15%;
-        border: solid 2px red;
         padding: 0 1rem 0 1rem;
+        border-top: .1rem solid black;
 
         .chatbox {
             @include functions.flex(flex-end, flex-start, row);
@@ -34,7 +33,7 @@
             .generica {
                 @include functions.flex(center, center, row);
                 @include functions.alturaLargura(40%, 10rem);
-                border: solid 2px black;
+                border: .1rem solid black;
                 font-size: 1.5rem;
                 text-align: justify;
                 padding: 1rem;
@@ -44,8 +43,8 @@
         }
 
         .digitemensagem {
-            border: solid 2px purple;
             @include functions.flex(center, center, row);
+            border-top: .1rem solid black;
 
             form {
                 @include functions.flex(center, flex-start, row);
@@ -56,7 +55,7 @@
 
                 .group {
                     @include functions.flex(center, flex-start, row);
-                    border: 2px solid black;
+                    border: .1rem solid black;
                     border-radius: 1.2rem;
                     margin-right: 1rem;
 

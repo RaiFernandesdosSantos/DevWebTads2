@@ -7,12 +7,10 @@
         @include functions.posicaoGrid(3, 15, 3, 17);
         display: grid;
         grid-template-rows: 1fr 6fr;
-        border: 2px solid yellow;
 
         .selectmonth {
             @include functions.flex(center, space-between, row);
             padding: 2rem;
-            border: 2px solid black;
 
             span {
                 font-size: 4rem;
@@ -23,9 +21,7 @@
                 @include functions.flex(center, space-between, row);
                 width: 20rem;
                 height: 4rem;
-                border: solid 1px red;
                 padding: 1rem;
-                border: 2px solid red;
 
                 select {
                     font-size: 2rem;
@@ -40,12 +36,11 @@
         .graph-values {
             @include functions.grid(1, 1fr, 2, 1fr);
             padding: 2rem;
-            border: 2px solid navy;
 
             .graph {
                 @include functions.flex(center, center, column);
                 font-size: 2rem;
-                border: 2px solid pink;
+                border-right: .1rem solid black;
 
                 i {
                     font-size: 15rem;
@@ -59,10 +54,13 @@
             }
 
             .values {
-                border: 2px solid hotpink;
                 font-size: 2rem;
                 padding: 1rem;
-                border: solid 1px red;
+                @include functions.flex(center, center, column);
+
+                ul {
+                    width: 100%;
+                }
 
                 li {
                     @include functions.flex(center, space-between, row);

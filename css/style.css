@@ -44,6 +44,7 @@ html {
   align-items: center;
   justify-content: flex-end;
   flex-direction: row;
+  border-bottom: 0.1rem solid black;
 }
 .container #header .chat,
 .container #header .logo {
@@ -52,7 +53,6 @@ html {
   justify-content: flex-end;
   flex-direction: row;
   font-size: 4.5rem;
-  border: 2px solid navy;
   width: 50%;
   height: 100%;
 }
@@ -63,7 +63,7 @@ html {
   display: none;
 }
 .container #aside {
-  border: 2px solid indigo;
+  border-right: 0.1rem solid black;
   grid-row-start: 1;
   grid-row-end: 17;
   grid-column-start: 1;
@@ -74,7 +74,7 @@ html {
   flex-direction: column;
 }
 .container #aside .perfil {
-  border: 2px solid indianred;
+  border-bottom: 0.1rem solid black;
   width: 100%;
   height: 30rem;
   display: flex;
@@ -98,7 +98,6 @@ html {
   font-size: 1.3rem;
 }
 .container #aside .menu {
-  border: 2px solid saddlebrown;
   width: 100%;
   height: 45rem;
   padding: 1rem 0 0 1rem;
@@ -135,16 +134,17 @@ html {
   flex-direction: row;
 }
 .container #section .informacoes {
-  border: 2px solid magenta;
+  border: 0.1rem solid black;
   width: 60%;
   height: 60%;
 }
 .container #section .informacoes .info-l,
 .container #section .informacoes .info-r .info-group {
   font-size: 2.3rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 .container #section .informacoes .info-l {
-  border: 2px solid salmon;
+  border-right: 0.1rem solid black;
   width: 45%;
   height: 100%;
   display: flex;
@@ -156,7 +156,6 @@ html {
   color: lawngreen;
 }
 .container #section .informacoes .info-r {
-  border: 2px solid khaki;
   width: 55%;
   height: 100%;
 }
@@ -199,15 +198,15 @@ html {
   display: grid;
   grid-template-rows: repeat(11, 1fr);
   grid-template-columns: repeat(1, 1fr);
+  border: 0.1rem solid black;
 }
 .container #main .table .row {
-  border: 2px solid lawngreen;
   display: grid;
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(6, 1fr);
 }
 .container #main .table .row .cell {
-  border: 2px solid seagreen;
+  border: 0.1rem solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,24 +221,24 @@ html {
   grid-row-end: 17;
   grid-column-start: 3;
   grid-column-end: 17;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .container #footer .footer-item {
-  border: 2px solid maroon;
-  width: 20rem;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-size: 1.7rem;
   color: black;
+  border-top: 0.1rem solid black;
 }
 .container #footer .footer-item i {
   font-size: 2.7rem;
+}
+.container #footer .selecionado {
+  border-top: 0.2rem solid orange;
 }
 .container #footer .selecionado span,
 .container #footer .selecionado i {
@@ -263,12 +262,12 @@ html {
 }
 .container .header-perfil .volta,
 .container .header-perfil .foto {
-  border: 2px solid greenyellow;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
   padding: 1rem;
+  border-bottom: 0.1rem solid black;
 }
 .container .header-perfil .volta {
   gap: 1rem;
@@ -306,12 +305,9 @@ html {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-}
-.container .main-perfil .texto {
-  border: 2px solid blueviolet;
+  border-bottom: 0.1rem solid black;
 }
 .container .main-perfil .item-mp {
-  border: 2px solid hotpink;
   gap: 2rem;
 }
 .container .main-perfil .item-mp .text-group {
@@ -335,16 +331,15 @@ html {
 .container .footer-perfil .item-fp {
   padding: 0 1rem 0 1rem;
   font-size: 1.2rem;
+  border-bottom: 0.1rem solid black;
 }
 .container .footer-perfil .texto {
-  border: 2px solid blueviolet;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
 }
 .container .footer-perfil .item-fp {
-  border: 2px solid hotpink;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -356,7 +351,6 @@ html {
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 17;
-  border: solid 2px blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -377,8 +371,8 @@ html {
   grid-column-end: 17;
   display: grid;
   grid-template-rows: 85% 15%;
-  border: solid 2px red;
   padding: 0 1rem 0 1rem;
+  border-top: 0.1rem solid black;
 }
 .container .main-chat .chatbox {
   display: flex;
@@ -393,7 +387,7 @@ html {
   flex-direction: row;
   width: 40%;
   height: 10rem;
-  border: solid 2px black;
+  border: 0.1rem solid black;
   font-size: 1.5rem;
   text-align: justify;
   padding: 1rem;
@@ -401,11 +395,11 @@ html {
   margin-bottom: 2rem;
 }
 .container .main-chat .digitemensagem {
-  border: solid 2px purple;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  border-top: 0.1rem solid black;
 }
 .container .main-chat .digitemensagem form {
   display: flex;
@@ -421,7 +415,7 @@ html {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  border: 2px solid black;
+  border: 0.1rem solid black;
   border-radius: 1.2rem;
   margin-right: 1rem;
 }
@@ -456,7 +450,6 @@ html {
   grid-column-end: 17;
   display: grid;
   grid-template-rows: 1fr 6fr;
-  border: 2px solid yellow;
 }
 .container .main-contracheque .selectmonth {
   display: flex;
@@ -464,7 +457,6 @@ html {
   justify-content: space-between;
   flex-direction: row;
   padding: 2rem;
-  border: 2px solid black;
 }
 .container .main-contracheque .selectmonth span {
   font-size: 4rem;
@@ -477,9 +469,7 @@ html {
   flex-direction: row;
   width: 20rem;
   height: 4rem;
-  border: solid 1px red;
   padding: 1rem;
-  border: 2px solid red;
 }
 .container .main-contracheque .selectmonth .select select {
   font-size: 2rem;
@@ -492,7 +482,6 @@ html {
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem;
-  border: 2px solid navy;
 }
 .container .main-contracheque .graph-values .graph {
   display: flex;
@@ -500,7 +489,7 @@ html {
   justify-content: center;
   flex-direction: column;
   font-size: 2rem;
-  border: 2px solid pink;
+  border-right: 0.1rem solid black;
 }
 .container .main-contracheque .graph-values .graph i {
   font-size: 15rem;
@@ -511,10 +500,15 @@ html {
   font-weight: 500;
 }
 .container .main-contracheque .graph-values .values {
-  border: 2px solid hotpink;
   font-size: 2rem;
   padding: 1rem;
-  border: solid 1px red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .main-contracheque .graph-values .values ul {
+  width: 100%;
 }
 .container .main-contracheque .graph-values .values li {
   display: flex;
