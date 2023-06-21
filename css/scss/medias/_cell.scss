@@ -142,8 +142,7 @@
             .main-chat {
                 .chatbox {
                     .generica {
-                        width: 60%;
-                        height: 15rem;
+                        @include functions.alturaLargura(60%, 15rem);
                     }
                 }
 
@@ -155,15 +154,13 @@
 
                         .group {
                             input {
-                                width: 18rem;
-                                height: 4rem;
+                                @include functions.alturaLargura(18rem, 4rem);
                             }
                         }
 
                         .enviar,
                         .upload {
-                            height: 4rem;
-                            width: 4rem;
+                            @include functions.alturaLargura(4rem, 4rem);
                         }
                     }
                 }
@@ -195,7 +192,7 @@
                     .graph {
                         font-size: 1.8rem;
                         border: none;
-                        border-bottom: .1rem solid black;
+                        border-bottom: .1rem solid functions.$fonte;
 
                         i {
                             font-size: 10rem;

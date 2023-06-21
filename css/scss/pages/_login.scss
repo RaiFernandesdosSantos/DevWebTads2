@@ -1,61 +1,55 @@
 @use "../functions";
 
 @mixin main {
-    body{
-        @include functions.flex(center, center, column);
-        height: 100vh;
-        width: 100%;
-    }
-    .loginbox{
-        border: solid 1px red;
-        @include functions.flex(center, center, column);
-        background-color: green;
-        width: 40rem;
-        height: 50rem;
+    body {
+        @include functions.flex(center, center, row);
+        @include functions.alturaLargura(100%, 100vh);
 
-
-        .logo{
-            @include functions.flex(center, center, row);
-            font-size: 8rem;
-            width: 15rem;
-            height: 15rem;
-            background-color: grey;
-            margin-bottom: 2rem;
-
-            i{
-                color: orange;
-              }
-        }
-
-        span{
-            font-size: 2.5rem;
-            font-weight: 600;
-        }
-
-        form{
+        .loginbox {
+            border: .1rem solid functions.$fonte;
             @include functions.flex(center, center, column);
-            width: 100%;
-            height: 20rem;
-            font-size: 2rem;
-            font-weight: 500;
+            @include functions.alturaLargura(60rem, 50rem);
 
-            input{
-                width: 24rem;
-                height: 3rem;
-                margin-bottom: 1.5rem;
+            .logo {
+                @include functions.flex(center, center, row);
+                font-size: 8rem;
+                @include functions.alturaLargura(15rem, 15rem);
+                background-color: lightgrey;
+                margin-bottom: 2rem;
+
+                i {
+                    color: functions.$laranja;
+                }
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            form {
+                @include functions.flex(flex-start, center, column);
+                @include functions.alturaLargura(50%, 20rem);
                 font-size: 2rem;
-                text-align: center;
-                border-radius: .5rem;
-            }
 
-            button{
-                width: 9rem;
-                height: 3rem;
-                border-radius: .5rem;
-            }
+                label {
+                    margin-bottom: .5rem;
+                }
 
-            label{
-                margin-bottom: .5rem;
+                input {
+                    @include functions.alturaLargura(24rem, 3rem);
+                    font-size: 1.5rem;
+                    border-radius: 1rem;
+                    border: .1rem solid functions.$fonte;
+                    margin-bottom: 1rem;
+                    padding: .5rem;
+                }
+
+                button {
+                    @include functions.alturaLargura(11rem, 3rem);
+                    border-radius: .7rem;
+                    margin-top: 1rem;
+                    border: none;
+                }
             }
         }
     }

@@ -19,8 +19,7 @@
 
             .select {
                 @include functions.flex(center, space-between, row);
-                width: 20rem;
-                height: 4rem;
+                @include functions.alturaLargura(20rem, 4rem);
 
                 select {
                     font-size: 2rem;
@@ -39,7 +38,7 @@
             .graph {
                 @include functions.flex(center, center, column);
                 font-size: 2rem;
-                border-right: .1rem solid black;
+                border-right: .1rem solid functions.$fonte;
 
                 i {
                     font-size: 15rem;
