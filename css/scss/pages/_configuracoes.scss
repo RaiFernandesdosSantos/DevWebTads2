@@ -12,7 +12,7 @@
         .foto {
             @include functions.flex(center, flex-start, row);
             padding: 1rem;
-            border-bottom: .1rem solid black;
+            border-bottom: .1rem solid functions.$fonte;
         }
 
         .volta {
@@ -36,7 +36,7 @@
                 position: absolute;
                 top: 18%;
                 left: 51%;
-                color: orange;
+                color: functions.$laranja;
             }
         }
     }
@@ -53,7 +53,7 @@
             padding: 0 1rem 0 1rem;
             font-size: 1.2rem;
             @include functions.flex(center, flex-start, row);
-            border-bottom: .1rem solid black;
+            border-bottom: .1rem solid functions.$fonte;
         }
 
         .item-mp {
@@ -84,7 +84,7 @@
         .item-fp {
             padding: 0 1rem 0 1rem;
             font-size: 1.2rem;
-            border-bottom: .1rem solid black;
+            border-bottom: .1rem solid functions.$fonte;
         }
 
         .texto {

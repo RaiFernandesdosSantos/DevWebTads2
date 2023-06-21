@@ -142,8 +142,7 @@
             .main-chat {
                 .chatbox {
                     .generica {
-                        width: 60%;
-                        height: 15rem;
+                        @include functions.alturaLargura(60%, 15rem);
                     }
                 }
 
@@ -155,15 +154,13 @@
 
                         .group {
                             input {
-                                width: 18rem;
-                                height: 4rem;
+                                @include functions.alturaLargura(18rem, 4rem);
                             }
                         }
 
                         .enviar,
                         .upload {
-                            height: 4rem;
-                            width: 4rem;
+                            @include functions.alturaLargura(4rem, 4rem);
                         }
                     }
                 }
@@ -195,7 +192,7 @@
                     .graph {
                         font-size: 1.8rem;
                         border: none;
-                        border-bottom: .1rem solid black;
+                        border-bottom: .1rem solid functions.$fonte;
 
                         i {
                             font-size: 10rem;
@@ -212,6 +209,41 @@
                                 font-size: .8rem;
                             }
                         }
+                    }
+                }
+            }
+        }
+
+        #body {
+            .loginbox {
+                @include functions.alturaLargura(32rem, 43rem);
+
+                .logo {
+                    font-size: 6rem;
+                    @include functions.alturaLargura(11rem, 11rem);
+                }
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                form {
+                    @include functions.alturaLargura(26rem, 23rem);
+                    border: 2px solid black;
+
+                    label {
+                        font-size: 1.7rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    input {
+                        @include functions.alturaLargura(24rem, 3rem);
+                        font-size: 1.5rem;
+                    }
+
+                    button {
+                        @include functions.alturaLargura(12rem, 4rem);
+                        font-size: 1.4rem;
                     }
                 }
             }
