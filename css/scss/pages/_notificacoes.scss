@@ -1,13 +1,13 @@
 @use "../functions";
 
-@mixin main{
-    .main-notificacoes{
+@mixin main {
+    .main-notificacoes {
         @include functions.posicaoGrid(3, 15, 3, 17);
         display: grid;
         grid-template-rows: 1fr 10fr;
         padding: 1rem;
-        
-        h1{
+
+        h1 {
             font-size: 3rem;
             justify-self: center;
         }
@@ -20,7 +20,7 @@
             border: solid 1px black;
         }
 
-        i{
+        i {
             font-size: 4rem;
         }
         span{
@@ -38,7 +38,6 @@
         }
         #inconsistencia{
             color: yellow;
-        }
-        
+      }
     }
 }

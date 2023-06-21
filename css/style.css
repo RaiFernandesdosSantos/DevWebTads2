@@ -627,9 +627,7 @@ html {
   margin-top: 1rem;
   border: none;
   font-size: 1.3rem;
-}
-
-/* Imports of the medias queries */
+} /* Imports of the medias queries */
 @media (min-width: 500px) and (max-width: 849px) {
   .container {
     width: 100%;
@@ -798,7 +796,7 @@ html {
     grid-row-end: 15;
     grid-column-start: 1;
     grid-column-end: 17;
-    overflow: hidden;
+    overflow: scroll;
   }
   .container #footer {
     grid-row-start: 15;
