@@ -11,9 +11,8 @@
             font-size: 3rem;
             justify-self: center;
         }
-
-        .notification-box {
-            @include functions.flex(center, space-between, row);
+        .notification-box{
+            @include functions.flex(center, space-evenly, row);
             width: 100%;
             height: 4rem;
             font-size: 1.75rem;
@@ -23,17 +22,22 @@
 
         i {
             font-size: 4rem;
-            color: red;
-            margin-right: -3rem;
         }
-
-        .ausencia {
-            text-decoration: underline;
-            color: red;
-        }
-
-        .quando {
+        span{
             text-decoration: underline;
         }
+
+        #vermelho{
+            color: red;
+        }
+        #amarelo{
+            color: yellow;
+        }
+        #ausencia{
+            color: red;
+        }
+        #inconsistencia{
+            color: yellow;
+      }
     }
 }

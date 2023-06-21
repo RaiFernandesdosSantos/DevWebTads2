@@ -537,7 +537,7 @@ html {
 .container .main-notificacoes .notification-box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
   width: 100%;
   height: 4rem;
@@ -547,15 +547,21 @@ html {
 }
 .container .main-notificacoes i {
   font-size: 4rem;
-  color: red;
-  margin-right: -3rem;
 }
-.container .main-notificacoes .ausencia {
+.container .main-notificacoes span {
   text-decoration: underline;
+}
+.container .main-notificacoes #vermelho {
   color: red;
 }
-.container .main-notificacoes .quando {
-  text-decoration: underline;
+.container .main-notificacoes #amarelo {
+  color: yellow;
+}
+.container .main-notificacoes #ausencia {
+  color: red;
+}
+.container .main-notificacoes #inconsistencia {
+  color: yellow;
 }
 
 /* Style login page */
@@ -922,6 +928,8 @@ html {
   .container .main-contracheque .values ul li span {
     font-size: 0.8rem;
   }
+<<<<<<< HEAD
+=======
   #body .loginbox {
     width: 32rem;
     height: 43rem;
@@ -953,4 +961,5 @@ html {
     height: 4rem;
     font-size: 1.4rem;
   }
+>>>>>>> 7ee3bf2faf5f58e4b3258baca055e9741a89041b
 }/*# sourceMappingURL=style.css.map */
