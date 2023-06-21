@@ -7,7 +7,7 @@
 @use "scss/pages/configuracoes";
 @use "scss/pages/chat";
 @use "scss/pages/contracheque";
-
+@use "scss/pages/login";
 /* Include mixin with the Resets */
 
 @include functions.reset;
@@ -41,7 +41,10 @@
   /* Style Contracheque Page */
 
   @include contracheque.main;
+  
 }
+
+@include login.main;
 
 /* Imports of the medias queries */
 
