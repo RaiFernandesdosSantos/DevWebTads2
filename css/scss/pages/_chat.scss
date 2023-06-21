@@ -25,7 +25,7 @@
         display: grid;
         grid-template-rows: 85% 15%;
         padding: 0 1rem 0 1rem;
-        border-top: .1rem solid black;
+        border-top: .1rem solid functions.$fonte;
 
         .chatbox {
             @include functions.flex(flex-end, flex-start, row);
@@ -33,7 +33,7 @@
             .generica {
                 @include functions.flex(center, center, row);
                 @include functions.alturaLargura(40%, 10rem);
-                border: .1rem solid black;
+                border: .1rem solid functions.$fonte;
                 font-size: 1.5rem;
                 text-align: justify;
                 padding: 1rem;
@@ -44,7 +44,7 @@
 
         .digitemensagem {
             @include functions.flex(center, center, row);
-            border-top: .1rem solid black;
+            border-top: .1rem solid functions.$fonte;
 
             form {
                 @include functions.flex(center, flex-start, row);
@@ -55,7 +55,7 @@
 
                 .group {
                     @include functions.flex(center, flex-start, row);
-                    border: .1rem solid black;
+                    border: .1rem solid functions.$fonte;
                     border-radius: 1.2rem;
                     margin-right: 1rem;
 

@@ -37,7 +37,7 @@
 
             #main {
                 @include functions.posicaoGrid(6, 15, 5, 17);
-                overflow: hidden;
+                overflow: scroll;
             }
 
             #footer {
@@ -47,8 +47,7 @@
             .main-chat {
                 .chatbox {
                     .generica {
-                        width: 65%;
-                        height: 13rem;
+                        @include functions.alturaLargura(65%, 13rem);
                     }
                 }
 
@@ -89,7 +88,7 @@
                     .graph {
                         font-size: 2.3rem;
                         border: none;
-                        border-bottom: .1rem solid black;
+                        border-bottom: .1rem solid functions.$fonte;
 
                         i {
                             font-size: 15rem;
@@ -106,6 +105,22 @@
                                 font-size: 1.3rem;
                             }
                         }
+                    }
+                }
+            }
+        }
+
+        #body {
+            .loginbox {
+                form {
+                    input {
+                        @include functions.alturaLargura(31rem, 4rem);
+                        font-size: 2rem;
+                    }
+
+                    button {
+                        @include functions.alturaLargura(15rem, 4rem);
+                        font-size: 1.7rem;
                     }
                 }
             }

@@ -23,6 +23,21 @@ html {
   display: grid;
   grid-template-rows: repeat(16, 1fr);
   grid-template-columns: repeat(16, 1fr);
+  /* Style Home Page */
+  /* Header style - Page Home */
+  /* Aside style - Page Home */
+  /* Section styel - Page Home */
+  /* Main style - Page Home */
+  /* Footer style - Page Home */
+  /* Style Configuracoes Page */
+  /* Header style - Page Connfiguracoes */
+  /* Main style - Page Configuracoes */
+  /* Footer style - Page configuracoes */
+  /* Style Chat Page */
+  /* Style header Chat */
+  /* Main style - Page Chat */
+  /* Style Contracheque Page */
+  /* Main style - Page Contracheque*/
 }
 .container #header {
   display: flex;
@@ -507,26 +522,25 @@ html {
   font-weight: bold;
 }
 
-body {
+/* Style login page */
+#body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: row;
   width: 100%;
+  height: 100vh;
 }
-
-.loginbox {
-  border: solid 1px red;
+#body .loginbox {
+  border: 0.1rem solid black;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: green;
-  width: 40rem;
+  width: 60rem;
   height: 50rem;
 }
-.loginbox .logo {
+#body .loginbox .logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -534,41 +548,42 @@ body {
   font-size: 8rem;
   width: 15rem;
   height: 15rem;
-  background-color: grey;
+  background-color: lightgrey;
   margin-bottom: 2rem;
 }
-.loginbox .logo i {
+#body .loginbox .logo i {
   color: orange;
 }
-.loginbox span {
+#body .loginbox h1 {
   font-size: 2.5rem;
-  font-weight: 600;
 }
-.loginbox form {
+#body .loginbox form {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
-  height: 20rem;
+  width: 54%;
+  height: 22rem;
   font-size: 2rem;
-  font-weight: 500;
 }
-.loginbox form input {
-  width: 24rem;
-  height: 3rem;
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-  text-align: center;
-  border-radius: 0.5rem;
-}
-.loginbox form button {
-  width: 9rem;
-  height: 3rem;
-  border-radius: 0.5rem;
-}
-.loginbox form label {
+#body .loginbox form label {
   margin-bottom: 0.5rem;
+}
+#body .loginbox form input {
+  width: 30rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+#body .loginbox form button {
+  width: 11rem;
+  height: 3rem;
+  border-radius: 0.7rem;
+  margin-top: 1rem;
+  border: none;
 }
 
 /* Imports of the medias queries */
@@ -613,7 +628,7 @@ body {
     grid-row-end: 15;
     grid-column-start: 5;
     grid-column-end: 17;
-    overflow: hidden;
+    overflow: scroll;
   }
   .container #footer {
     grid-row-start: 15;
@@ -666,6 +681,16 @@ body {
   }
   .container .main-contracheque .values ul li span {
     font-size: 1.3rem;
+  }
+  #body .loginbox form input {
+    width: 31rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+  #body .loginbox form button {
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 499px) {
@@ -819,8 +844,8 @@ body {
   }
   .container .main-chat .digitemensagem form .enviar,
   .container .main-chat .digitemensagem form .upload {
-    height: 4rem;
     width: 4rem;
+    height: 4rem;
   }
   .container .main-contracheque {
     grid-row-start: 3;
@@ -861,4 +886,33 @@ body {
   .container .main-contracheque .values ul li span {
     font-size: 0.8rem;
   }
-} /*# sourceMappingURL=style.css.map */
+  #body .loginbox {
+    width: 32rem;
+    height: 43rem;
+  }
+  #body .loginbox .logo {
+    font-size: 6rem;
+    width: 11rem;
+    height: 11rem;
+  }
+  #body .loginbox h1 {
+    font-size: 2rem;
+  }
+  #body .loginbox form {
+    width: 26rem;
+    height: 23rem;
+  }
+  #body .loginbox form label {
+    font-size: 1.7rem;
+  }
+  #body .loginbox form input {
+    width: 24rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  #body .loginbox form button {
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=style.css.map */
