@@ -1,0 +1,72 @@
+@use "../functions";
+
+@mixin main {
+    /* Main style - Page Chat */
+
+    .main-chat {
+        @include functions.posicaoGrid(3, 17, 1, 17);
+        display: grid;
+        grid-template-rows: 85% 15%;
+        border: solid 2px red;
+        padding: 0 1rem 0 1rem;
+
+        .chatbox {
+            @include functions.flex(flex-end, flex-start, row);
+
+            .generica {
+                @include functions.flex(center, center, row);
+                @include functions.alturaLargura(40%, 10rem);
+                border: solid 2px black;
+                font-size: 1.5rem;
+                text-align: justify;
+                padding: 1rem;
+                border-radius: 0 1.2rem 1.2rem 1.2rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .digitemensagem {
+            border: solid 2px purple;
+            @include functions.flex(center, center, row);
+
+            form {
+                @include functions.flex(center, flex-start, row);
+
+                i {
+                    font-size: 3rem;
+                }
+
+                .group {
+                    @include functions.flex(center, flex-start, row);
+                    border: 2px solid black;
+                    border-radius: 1.2rem;
+                    margin-right: 1rem;
+
+                    input,
+                    .upload {
+                        border: none;
+                    }
+
+                    input {
+                        @include functions.alturaLargura(100rem, 6rem);
+                        border-radius: 1.2rem 0 0 1.2rem;
+                    }
+
+                    .upload {
+                        border-radius: 0 1.2rem 1.2rem 0;
+                    }
+                }
+
+                .enviar,
+                .upload {
+                    @include functions.alturaLargura(6rem, 6rem);
+                    @include functions.flex(center, center, row);
+                }
+
+                .enviar {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

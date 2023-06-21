@@ -1,3 +1,5 @@
+/* Imports */
+/* Include mixin with the Resets */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   padding: 0;
@@ -12,6 +14,7 @@ html {
   font-size: 62.5%;
 }
 
+/* Container style - All Pages */
 .container {
   border: 2px solid black;
   width: 80%;
@@ -20,18 +23,27 @@ html {
   display: grid;
   grid-template-rows: repeat(16, 1fr);
   grid-template-columns: repeat(16, 1fr);
+  /* Style Home Page */
+  /* Header style - Page Home */
+  /* Aside style - Page Home */
+  /* Section styel - Page Home */
+  /* Main style - Page Home */
+  /* Footer style - Page Home */
+  /* Style Configuracoes Page */
+  /* Header style - Page Connfiguracoes */
+  /* Main style - Page Configuracoes */
+  /* Footer style - Page configuracoes */
+  /* Style Chat Page */
+  /* Main style - Page Chat */
+  /* Style Contracheque Page */
+  /* Main style - Page Contracheque*/
 }
 .container #header {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 3;
-  grid-column-end: 17;
   border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: row;
-  padding: 0 2rem 0 2rem;
 }
 .container #header .chat,
 .container #header .logo {
@@ -238,6 +250,14 @@ html {
 .container #footer .selecionado i {
   color: orange;
 }
+.container #header,
+.container .header-chat {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 17;
+  padding: 0 2rem 0 2rem;
+}
 .container .header-perfil {
   border: 2px solid red;
   grid-row-start: 1;
@@ -340,15 +360,10 @@ html {
 }
 .container .header-chat {
   border: solid 2px blue;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 17;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding: 0 2rem 0 2rem;
   font-size: 4rem;
 }
 .container .header-chat .texto h1 {
@@ -515,6 +530,7 @@ html {
   font-weight: 500;
 }
 
+/* Imports of the medias queries */
 @media (min-width: 500px) and (max-width: 849px) {
   .container {
     width: 100%;

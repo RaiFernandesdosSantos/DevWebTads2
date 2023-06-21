@@ -1,4 +1,4 @@
-@use "functions";
+@use "../functions";
 
 @mixin tablet {
     @media (min-width: 500px) and (max-width: 849px) {

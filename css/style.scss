@@ -1,8 +1,18 @@
+/* Imports */
+
 @use "scss/functions";
-@use "scss/tablet";
-@use "scss/cell";
+@use "scss/medias/tablet";
+@use "scss/medias/cell";
+@use "scss/pages/home";
+@use "scss/pages/configuracoes";
+@use "scss/pages/chat";
+@use "scss/pages/contracheque";
+
+/* Include mixin with the Resets */
 
 @include functions.reset;
+
+/* Container style - All Pages */
 
 .container {
   border: 2px solid black;
@@ -10,27 +20,9 @@
   margin: 0 auto;
   @include functions.grid(16, 1fr, 16, 1fr);
 
-  #header {
-    border: 2px solid red;
-    @include functions.flex(center, flex-end, row);
+  /* Style Home Page */
 
-
-    .chat,
-    .logo {
-      @include functions.flex(center, flex-end, row);
-      font-size: 4.5rem;
-      border: 2px solid navy;
-      @include functions.alturaLargura(50%, 100%);
-    }
-
-    .logo i {
-      color: functions.$laranja;
-    }
-
-    .menu {
-      display: none;
-    }
-  }
+  @include home.main;
 
   #header,
   .header-chat {
@@ -38,419 +30,20 @@
     padding: 0 2rem 0 2rem;
   }
 
-  #aside {
-    border: 2px solid indigo;
-    @include functions.posicaoGrid(1, 17, 1, 3);
-    @include functions.flex(flex-start, flex-start, column);
+  /* Style Configuracoes Page */
 
-    .perfil {
-      border: 2px solid indianred;
-      @include functions.alturaLargura(100%, 30rem);
-      @include functions.flex(center, center, column);
+  @include configuracoes.main;
 
-      i {
-        font-size: 10rem;
-      }
+  /* Style Chat Page */
 
-      .span-group {
-        @include functions.flex(flex-start, center, column);
+  @include chat.main;
 
-        .nome {
-          font-size: 2rem;
-        }
+  /* Style Contracheque Page */
 
-        .cpf {
-          font-size: 1.3rem;
-        }
-      }
-    }
-
-    .menu {
-      border: 2px solid saddlebrown;
-      @include functions.alturaLargura(100%, 45rem);
-      padding: 1rem 0 0 1rem;
-
-      h1,
-      h2 {
-        margin-bottom: 1rem;
-      }
-
-      a {
-        font-size: 2rem;
-        color: functions.$fonte;
-        font-weight: bold;
-      }
-    }
-  }
-
-  #section {
-    border: 2px solid green;
-    padding: 0 2rem 0 2rem;
-    @include functions.flex(flex-start, center, column);
-    @include functions.posicaoGrid(3, 6, 3, 17);
-
-    h3 {
-      font-size: 1.7rem;
-      margin-bottom: 1rem;
-    }
-
-    .informacoes,
-    .informacoes .info-r {
-      @include functions.flex(center, flex-start, row);
-    }
-
-    .informacoes {
-      border: 2px solid magenta;
-      @include functions.alturaLargura(50rem, 10rem);
-
-      .info-l,
-      .info-r .info-group {
-        font-size: 2.3rem;
-      }
-
-      .info-l {
-        border: 2px solid salmon;
-        @include functions.alturaLargura(45%, 100%);
-        @include functions.flex(flex-start, center, column);
-
-        span {
-          color: lawngreen;
-        }
-      }
-
-      .info-r {
-        border: 2px solid khaki;
-        @include functions.alturaLargura(55%, 100%);
-
-        .info-group {
-          @include functions.flex(center, flex-start, column);
-
-          .cima {
-            text-align: left;
-            @include functions.alturaLargura(100%, 100%);
-          }
-        }
-      }
-
-      i {
-        font-size: 5rem;
-      }
-    }
-  }
-
-  #main {
-    border: 2px solid blue;
-    @include functions.posicaoGrid(6, 15, 3, 17);
-    overflow: hidden;
-
-    .main-header {
-      border: 2px solid khaki;
-      @include functions.alturaLargura(100%, 4rem);
-      @include functions.flex(center, space-between, row);
-      padding: 0 2rem 0 2rem;
-
-      div i {
-        font-size: 2.5rem;
-      }
-    }
-
-    .table {
-      border: 2px solid teal;
-      @include functions.alturaLargura(100%, calc(100% - 4rem));
-      @include functions.grid(11, 1fr, 1, 1fr);
-
-      .row {
-        border: 2px solid lawngreen;
-        @include functions.grid(1, 1fr, 6, 1fr);
-
-        .cell {
-          border: 2px solid seagreen;
-          @include functions.flex(center, center, column);
-          font-size: 1.5rem;
-
-          i {
-            font-size: 3rem;
-          }
-        }
-      }
-    }
-  }
-
-  #footer {
-    border: 2px solid yellow;
-    @include functions.posicaoGrid(15, 17, 3, 17);
-    @include functions.flex(center, space-between, row);
-
-    .footer-item {
-      border: 2px solid maroon;
-      @include functions.alturaLargura(20rem, 100%);
-      @include functions.flex(center, center, column);
-      font-size: 1.7rem;
-      color: functions.$fonte;
-
-      i {
-        font-size: 2.7rem;
-      }
-    }
-
-    .selecionado span,
-    .selecionado i {
-      color: functions.$laranja;
-    }
-  }
-
-  .header-perfil {
-    border: 2px solid red;
-    @include functions.posicaoGrid(1, 4, 1, 17);
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-
-    .volta,
-    .foto {
-      border: 2px solid greenyellow;
-      @include functions.flex(center, flex-start, row);
-      padding: 1rem;
-    }
-
-    .volta {
-      gap: 1rem;
-
-      i {
-        font-size: 3rem;
-      }
-    }
-
-    .foto {
-      justify-content: center;
-
-      #perfil {
-        font-size: 10rem;
-      }
-
-      #camera {
-        font-size: 4rem;
-        position: absolute;
-        top: 13%;
-        left: 51%;
-        color: orange;
-      }
-    }
-  }
-
-  .main-perfil {
-    border: 2px solid blue;
-    @include functions.posicaoGrid(4, 12, 1, 17);
-    display: grid;
-    grid-template-rows: 5rem repeat(4, 1fr);
-
-    .texto,
-    .item-mp {
-      padding: 1rem;
-      font-size: 1.5rem;
-      @include functions.flex(center, flex-start, row);
-    }
-
-    .texto {
-      border: 2px solid blueviolet;
-    }
-
-    .item-mp {
-      border: 2px solid hotpink;
-      gap: 2rem;
-
-      .text-group {
-        width: 25rem;
-
-        input {
-          border: none;
-        }
-      }
-
-      i {
-        font-size: 3.5rem;
-      }
-    }
-  }
-
-  .footer-perfil {
-    border: 2px solid green;
-    @include functions.posicaoGrid(12, 17, 1, 17);
-    display: grid;
-    grid-template-rows: 5rem repeat(3, 1fr);
-
-    .texto,
-    .item-fp {
-      padding: 1rem;
-      font-size: 1.5rem;
-    }
-
-    .texto {
-      border: 2px solid blueviolet;
-      @include functions.flex(center, flex-start, row);
-    }
-
-    .item-fp {
-      border: 2px solid hotpink;
-      @include functions.flex(flex-start, center, column);
-      gap: 0.5rem;
-    }
-  }
-
-  .header-chat {
-    border: solid 2px blue;
-    @include functions.flex(center, space-between, row);
-    font-size: 4rem;
-
-    .texto h1 {
-      font-size: 3rem;
-    }
-
-    .logo i {
-      font-size: 5rem;
-      color: functions.$laranja;
-    }
-  }
-
-  .main-chat {
-    @include functions.posicaoGrid(3, 17, 1, 17);
-    display: grid;
-    grid-template-rows: 85% 15%;
-    border: solid 2px red;
-    padding: 0 1rem 0 1rem;
-
-    .chatbox {
-      @include functions.flex(flex-end, flex-start, row);
-
-      .generica {
-        @include functions.flex(center, center, row);
-        @include functions.alturaLargura(40%, 10rem);
-        border: solid 2px black;
-        font-size: 1.5rem;
-        text-align: justify;
-        padding: 1rem;
-        border-radius: 0 1.2rem 1.2rem 1.2rem;
-        margin-bottom: 2rem;
-      }
-    }
-
-    .digitemensagem {
-      border: solid 2px purple;
-      @include functions.flex(center, center, row);
-
-      form {
-        @include functions.flex(center, flex-start, row);
-
-        i {
-          font-size: 3rem;
-        }
-
-        .group {
-          @include functions.flex(center, flex-start, row);
-          border: 2px solid black;
-          border-radius: 1.2rem;
-          margin-right: 1rem;
-
-          input,
-          .upload {
-            border: none;
-          }
-
-          input {
-            @include functions.alturaLargura(100rem, 6rem);
-            border-radius: 1.2rem 0 0 1.2rem;
-          }
-
-          .upload {
-            border-radius: 0 1.2rem 1.2rem 0;
-          }
-        }
-
-        .enviar,
-        .upload {
-          @include functions.alturaLargura(6rem, 6rem);
-          @include functions.flex(center, center, row);
-        }
-
-        .enviar {
-          border-radius: 50%;
-        }
-      }
-    }
-  }
-
-  .main-contracheque {
-    @include functions.posicaoGrid(3, 15, 3, 17);
-    display: grid;
-    grid-template-rows: 1fr 6fr;
-    border: 2px solid yellow;
-
-    .selectmonth {
-      @include functions.flex(center, space-between, row);
-      padding: 2rem;
-      border: 2px solid black;
-
-      span {
-        font-size: 4rem;
-        font-weight: 600;
-      }
-
-      .select {
-        @include functions.flex(center, space-between, row);
-        width: 20rem;
-        height: 4rem;
-        border: solid 1px red;
-        padding: 1rem;
-        border: 2px solid red;
-
-        select {
-          font-size: 2rem;
-        }
-      }
-
-      .download {
-        font-size: 3rem;
-      }
-    }
-
-    .graph-values {
-      @include functions.grid(1, 1fr, 2, 1fr);
-      padding: 2rem;
-      border: 2px solid navy;
-
-      .graph {
-        @include functions.flex(center, center, column);
-        font-size: 2rem;
-        border: 2px solid pink;
-
-        i {
-          font-size: 15rem;
-          margin-bottom: 2rem;
-        }
-
-        span {
-          margin: 1rem 0;
-          font-weight: 500;
-        }
-      }
-
-      .values {
-        border: 2px solid hotpink;
-        font-size: 2rem;
-        padding: 1rem;
-        border: solid 1px red;
-
-        li {
-          @include functions.flex(center, space-between, row);
-          height: 4rem;
-
-          .valores {
-            font-weight: 500;
-          }
-        }
-      }
-    }
-  }
+  @include contracheque.main;
 }
+
+/* Imports of the medias queries */
 
 @include tablet.tablet;
 @include cell.celular;

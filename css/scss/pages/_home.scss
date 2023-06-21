@@ -1,0 +1,196 @@
+@use "../functions";
+
+@mixin main {
+    /* Header style - Page Home */
+
+    #header {
+        border: 2px solid red;
+        @include functions.flex(center, flex-end, row);
+
+
+        .chat,
+        .logo {
+            @include functions.flex(center, flex-end, row);
+            font-size: 4.5rem;
+            border: 2px solid navy;
+            @include functions.alturaLargura(50%, 100%);
+        }
+
+        .logo i {
+            color: functions.$laranja;
+        }
+
+        .menu {
+            display: none;
+        }
+    }
+
+    /* Aside style - Page Home */
+
+    #aside {
+        border: 2px solid indigo;
+        @include functions.posicaoGrid(1, 17, 1, 3);
+        @include functions.flex(flex-start, flex-start, column);
+
+        .perfil {
+            border: 2px solid indianred;
+            @include functions.alturaLargura(100%, 30rem);
+            @include functions.flex(center, center, column);
+
+            i {
+                font-size: 10rem;
+            }
+
+            .span-group {
+                @include functions.flex(flex-start, center, column);
+
+                .nome {
+                    font-size: 2rem;
+                }
+
+                .cpf {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .menu {
+            border: 2px solid saddlebrown;
+            @include functions.alturaLargura(100%, 45rem);
+            padding: 1rem 0 0 1rem;
+
+            h1,
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            a {
+                font-size: 2rem;
+                color: functions.$fonte;
+                font-weight: bold;
+            }
+        }
+    }
+
+    /* Section styel - Page Home */
+
+    #section {
+        border: 2px solid green;
+        padding: 0 2rem 0 2rem;
+        @include functions.flex(flex-start, center, column);
+        @include functions.posicaoGrid(3, 6, 3, 17);
+
+        h3 {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+        }
+
+        .informacoes,
+        .informacoes .info-r {
+            @include functions.flex(center, flex-start, row);
+        }
+
+        .informacoes {
+            border: 2px solid magenta;
+            @include functions.alturaLargura(50rem, 10rem);
+
+            .info-l,
+            .info-r .info-group {
+                font-size: 2.3rem;
+            }
+
+            .info-l {
+                border: 2px solid salmon;
+                @include functions.alturaLargura(45%, 100%);
+                @include functions.flex(flex-start, center, column);
+
+                span {
+                    color: lawngreen;
+                }
+            }
+
+            .info-r {
+                border: 2px solid khaki;
+                @include functions.alturaLargura(55%, 100%);
+
+                .info-group {
+                    @include functions.flex(center, flex-start, column);
+
+                    .cima {
+                        text-align: left;
+                        @include functions.alturaLargura(100%, 100%);
+                    }
+                }
+            }
+
+            i {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    /* Main style - Page Home */
+
+    #main {
+        border: 2px solid blue;
+        @include functions.posicaoGrid(6, 15, 3, 17);
+        overflow: hidden;
+
+        .main-header {
+            border: 2px solid khaki;
+            @include functions.alturaLargura(100%, 4rem);
+            @include functions.flex(center, space-between, row);
+            padding: 0 2rem 0 2rem;
+
+            div i {
+                font-size: 2.5rem;
+            }
+        }
+
+        .table {
+            border: 2px solid teal;
+            @include functions.alturaLargura(100%, calc(100% - 4rem));
+            @include functions.grid(11, 1fr, 1, 1fr);
+
+            .row {
+                border: 2px solid lawngreen;
+                @include functions.grid(1, 1fr, 6, 1fr);
+
+                .cell {
+                    border: 2px solid seagreen;
+                    @include functions.flex(center, center, column);
+                    font-size: 1.5rem;
+
+                    i {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Footer style - Page Home */
+
+    #footer {
+        border: 2px solid yellow;
+        @include functions.posicaoGrid(15, 17, 3, 17);
+        @include functions.flex(center, space-between, row);
+
+        .footer-item {
+            border: 2px solid maroon;
+            @include functions.alturaLargura(20rem, 100%);
+            @include functions.flex(center, center, column);
+            font-size: 1.7rem;
+            color: functions.$fonte;
+
+            i {
+                font-size: 2.7rem;
+            }
+        }
+
+        .selecionado span,
+        .selecionado i {
+            color: functions.$laranja;
+        }
+    }
+}

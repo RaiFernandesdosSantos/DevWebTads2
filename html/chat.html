@@ -7,39 +7,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chat</title>
 
+  <!-- External CSS stylesheets -->
+
   <link rel="stylesheet" href="../css/style.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
   <div class="container">
+    <!-- Header -->
+
     <header class="header-chat">
+      <!-- Back Button-->
+
       <div class="volta">
-        <a href="home.html"><i class="bx bx-left-arrow-alt"></i></a>
+        <a href="home.html">
+          <i class="bx bx-left-arrow-alt"></i>
+        </a>
       </div>
+
+      <!-- Title -->
+
       <div class="texto">
         <h1>Suporte ao usuário</h1>
       </div>
+
+      <!-- Logo -->
+
       <div class="logo">
         <i class="bx bxl-xing"></i>
       </div>
     </header>
 
+    <!-- Main Content - Chat -->
+
     <main class="main-chat">
+      <!-- Chat -->
+
       <div class="chatbox">
         <div class="generica">
+          <!-- Placeholder message for the chat -->
+
           <span>Olá, seja bem-vindo ao Suporte ao Usuário, exponha o seu problema com detalhes na caixa abaixo para que
             possamos atender sua solicitação o mais breve possível.</span>
         </div>
       </div>
       <div class="digitemensagem">
+        <!-- Form -->
+
         <form action="">
           <div class="group">
+            <!-- Input field for users to enter their message -->
+
             <input type="text" placeholder="Descreva aqui seu problema para que possamos ajudá-lo(a)">
+
+            <!-- Button for uploading a file -->
+
             <button class="upload" onclick="confirm('Deseja enviar alguma arquivo?')">
               <i class='bx bx-upload'></i>
             </button>
           </div>
+
+          <!-- Button for submitting the message -->
+
           <button class="enviar" onclick="alert('Pedido de suporte recebido!')">
             <i class='bx bx-paper-plane'></i>
           </button>
