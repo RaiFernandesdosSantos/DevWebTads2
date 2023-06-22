@@ -86,12 +86,12 @@
                     @include functions.grid(2, 1fr, 1, 1fr);
 
                     .graph {
-                        font-size: 2.3rem;
+                        font-size: 2rem;
                         border: none;
                         border-bottom: .1rem solid functions.$fonte;
 
                         img {
-                            @include functions.alturaLargura(35rem, 20rem);
+                            @include functions.alturaLargura(25rem, 15rem);
                         }
 
                         i {

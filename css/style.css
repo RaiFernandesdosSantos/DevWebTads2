@@ -138,7 +138,7 @@ html {
   justify-content: flex-start;
   flex-direction: row;
   width: 10rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: black;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -522,7 +522,7 @@ html {
   grid-column-start: 3;
   grid-column-end: 17;
   display: grid;
-  grid-template-rows: 1fr 6fr;
+  grid-template-rows: 1fr 7fr;
 }
 .container .main-contracheque .selectmonth {
   display: flex;
@@ -826,13 +826,13 @@ html {
     grid-template-columns: repeat(1, 1fr);
   }
   .container .main-contracheque .graph-values .graph {
-    font-size: 2.3rem;
+    font-size: 2rem;
     border: none;
     border-bottom: 0.1rem solid black;
   }
   .container .main-contracheque .graph-values .graph img {
-    width: 35rem;
-    height: 20rem;
+    width: 25rem;
+    height: 15rem;
   }
   .container .main-contracheque .graph-values .graph i {
     font-size: 15rem;
