@@ -12,10 +12,11 @@
 
             .logo {
                 @include functions.flex(center, center, row);
-                font-size: 8rem;
+                font-size: 10rem;
                 @include functions.alturaLargura(15rem, 15rem);
                 background-color: lightgrey;
                 margin-bottom: 2rem;
+                border-radius: 3rem;
 
                 i {
                     color: functions.$laranja;
@@ -27,12 +28,15 @@
             }
 
             form {
-                @include functions.flex(flex-start, center, column);
+                @include functions.flex(center, center, column);
                 @include functions.alturaLargura(54%, 22rem);
                 font-size: 2rem;
 
                 label {
                     margin-bottom: .5rem;
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 500;
                 }
 
                 input {
