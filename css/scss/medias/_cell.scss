@@ -227,9 +227,7 @@
                         border-bottom: .1rem solid functions.$fonte;
 
                         img {
-                            width: 30rem;
-                            height: 20rem;
-                            @include functions.alturaLargura(35rem, 25rem);
+                            @include functions.alturaLargura(35rem, 15rem);
                         }
                     }
                 }

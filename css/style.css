@@ -832,8 +832,8 @@ html {
     border-bottom: 0.1rem solid black;
   }
   .container .main-contracheque .graph-values .graph img {
-    width: 35rem;
-    height: 20rem;
+    width: 25rem;
+    height: 13rem;
   }
   .container .main-contracheque .graph-values .graph i {
     font-size: 15rem;
@@ -1092,10 +1092,8 @@ html {
     border-bottom: 0.1rem solid black;
   }
   .container .main-contracheque .graph-values .graph img {
-    width: 30rem;
-    height: 20rem;
     width: 35rem;
-    height: 25rem;
+    height: 15rem;
   }
   .container .main-contracheque .values {
     padding: 0 1rem 0 1rem;
