@@ -18,8 +18,8 @@
             color: functions.$laranja;
         }
 
-        .chat i{
-            color: #769cc2;
+        .chat i {
+            color: functions.$chat;
         }
 
         .menu {
@@ -70,9 +70,9 @@
                 font-weight: 500;
                 margin-bottom: 1rem;
 
-                i{
+                i {
                     margin-left: 1rem;
-                    color: red;
+                    color: functions.$vermelho;
                     font-weight: 700;
                     font-size: 2.5rem;
                 }
@@ -149,13 +149,21 @@
             @include functions.flex(center, space-between, row);
             padding: 0 2rem 0 2rem;
 
+            .select {
+                @include functions.flex(center, space-between, row);
+
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+
             div i {
                 font-size: 2.5rem;
             }
         }
 
         .table {
-            @include functions.alturaLargura(100%, calc(100% - 4rem));
+            @include functions.alturaLargura(100%, 50rem);
             @include functions.grid(11, 1fr, 1, 1fr);
             border: .1rem solid functions.$fonte;
 
@@ -169,31 +177,35 @@
 
                     i {
                         font-size: 3rem;
+
+                        &:hover+#ausencia {
+                            display: block;
+                        }
+
+                        &:hover+#inconstencia {
+                            display: block;
+                        }
                     }
 
-                     #ausencia{
+                    #ausencia {
                         text-align: center;
-                        color: red;
+                        color: functions.$vermelho;
                         display: none;
                     }
-                      i:hover + #ausencia {
-                        display: block;
-                      }
-                      #vermelho:hover{
-                        color: red;
-                      }
 
-                      #inconstencia{
+                    #vermelho:hover {
+                        color: functions.$vermelho;
+                    }
+
+                    #inconstencia {
                         text-align: center;
                         color: functions.$laranja;
                         display: none;
-                      }
-                      i:hover + #inconstencia {
-                        display: block;
-                      }
-                      #laranja:hover{
+                    }
+
+                    #laranja:hover {
                         color: functions.$laranja;
-                      }
+                    }
                 }
             }
         }

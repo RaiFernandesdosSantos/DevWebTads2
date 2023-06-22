@@ -7,47 +7,59 @@
         grid-template-rows: 1fr 10fr;
         padding: 1rem;
 
-        h1 {
-            font-size: 4rem;
-            justify-self: center;
-            align-self: center
+        .titulo {
+            @include functions.flex(center, center, row);
+            padding-bottom: 1rem;
+
+            h1 {
+                font-size: 3rem;
+            }
         }
 
         .notificacoes {
-            @include functions.flex(center, space-evenly, column);
+            @include functions.flex(center, space-between, column);
 
             .notification-box {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 3fr;
-                @include functions.alturaLargura(100%, 6rem);
-                border: solid .2rem rgb(164, 50, 8);
+                grid-template-columns: 8rem 1fr 1fr 3fr;
+                @include functions.alturaLargura(100%, 5rem);
+                border: .1rem solid rgb(164, 50, 8);
                 border-radius: 1rem;
-                font-size: 1.75rem;
-                align-items:center;
-                justify-items:center;
-                
+                font-size: 1.7rem;
 
-                i{
-                    font-size: 4rem;
+                .icon {
+                    @include functions.flex(center, flex-start, row);
+                    padding-left: 1rem;
+
+                    i {
+                        font-size: 3.5rem;
+                    }
                 }
 
-                .porque{
-                    text-decoration:underline;
-                    font-weight: 700;
+                .porque {
+                    text-decoration: underline;
+                    font-weight: 500;
+                    @include functions.flex(center, center, row);
                 }
+
                 #ausencia {
-                    color: red;
+                    color: functions.$vermelho;
                 }
-                
+
                 #inconsistencia {
                     color: functions.$laranja;
                 }
+
                 .quando {
                     text-decoration: underline;
+                    @include functions.flex(center, center, row);
                 }
 
-                p{
-                    font-size: 2rem;
+                p {
+                    font-size: 1.7rem;
+                    @include functions.flex(center, flex-end, row);
+                    text-align: justify;
+                    padding-right: 1rem;
                 }
             }
         }

@@ -207,12 +207,21 @@ html {
   flex-direction: row;
   padding: 0 2rem 0 2rem;
 }
+.container #main .main-header .select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.container #main .main-header .select span {
+  font-size: 1.5rem;
+}
 .container #main .main-header div i {
   font-size: 2.5rem;
 }
 .container #main .table {
   width: 100%;
-  height: calc(100% - 4rem);
+  height: 50rem;
   display: grid;
   grid-template-rows: repeat(11, 1fr);
   grid-template-columns: repeat(1, 1fr);
@@ -234,13 +243,16 @@ html {
 .container #main .table .row .cell i {
   font-size: 3rem;
 }
+.container #main .table .row .cell i:hover + #ausencia {
+  display: block;
+}
+.container #main .table .row .cell i:hover + #inconstencia {
+  display: block;
+}
 .container #main .table .row .cell #ausencia {
   text-align: center;
   color: red;
   display: none;
-}
-.container #main .table .row .cell i:hover + #ausencia {
-  display: block;
 }
 .container #main .table .row .cell #vermelho:hover {
   color: red;
@@ -249,9 +261,6 @@ html {
   text-align: center;
   color: orange;
   display: none;
-}
-.container #main .table .row .cell i:hover + #inconstencia {
-  display: block;
 }
 .container #main .table .row .cell #laranja:hover {
   color: orange;
@@ -500,19 +509,20 @@ html {
   padding: 2rem;
 }
 .container .main-contracheque .selectmonth span {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: bold;
 }
 .container .main-contracheque .selectmonth .select {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  width: 20rem;
+  width: 15rem;
   height: 4rem;
 }
-.container .main-contracheque .selectmonth .select select {
-  font-size: 2rem;
+.container .main-contracheque .selectmonth .select .mes {
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 .container .main-contracheque .selectmonth .select .download {
   font-size: 3rem;
@@ -532,13 +542,12 @@ html {
   border-right: 0.1rem solid black;
 }
 .container .main-contracheque .graph-values .graph img {
-  width: 50rem;
-  height: 35rem;
+  width: 40rem;
+  height: 25rem;
   margin-bottom: 1rem;
 }
 .container .main-contracheque .graph-values .graph span {
   margin-bottom: 1rem;
-  font-weight: 500;
 }
 .container .main-contracheque .graph-values .values {
   padding: 1rem;
@@ -572,34 +581,48 @@ html {
   grid-template-rows: 1fr 10fr;
   padding: 1rem;
 }
-.container .main-notificacoes h1 {
-  font-size: 4rem;
-  justify-self: center;
-  align-self: center;
+.container .main-notificacoes .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 1rem;
+}
+.container .main-notificacoes .titulo h1 {
+  font-size: 3rem;
 }
 .container .main-notificacoes .notificacoes {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
 }
 .container .main-notificacoes .notificacoes .notification-box {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 3fr;
+  grid-template-columns: 8rem 1fr 1fr 3fr;
   width: 100%;
-  height: 6rem;
-  border: solid 0.2rem rgb(164, 50, 8);
+  height: 5rem;
+  border: 0.1rem solid rgb(164, 50, 8);
   border-radius: 1rem;
-  font-size: 1.75rem;
-  align-items: center;
-  justify-items: center;
+  font-size: 1.7rem;
 }
-.container .main-notificacoes .notificacoes .notification-box i {
-  font-size: 4rem;
+.container .main-notificacoes .notificacoes .notification-box .icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding-left: 1rem;
+}
+.container .main-notificacoes .notificacoes .notification-box .icon i {
+  font-size: 3.5rem;
 }
 .container .main-notificacoes .notificacoes .notification-box .porque {
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 .container .main-notificacoes .notificacoes .notification-box #ausencia {
   color: red;
@@ -609,9 +632,19 @@ html {
 }
 .container .main-notificacoes .notificacoes .notification-box .quando {
   text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 .container .main-notificacoes .notificacoes .notification-box p {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  text-align: justify;
+  padding-right: 1rem;
 }
 
 /* Style login page */
@@ -977,7 +1010,7 @@ html {
     padding: 0 1rem 0 1rem;
   }
   .container .main-contracheque .selectmonth span {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   .container .main-contracheque .selectmonth .select {
     width: 15rem;
@@ -997,14 +1030,43 @@ html {
     border: none;
     border-bottom: 0.1rem solid black;
   }
-  .container .main-contracheque .graph-values .graph i {
-    font-size: 10rem;
+  .container .main-contracheque .graph-values .graph img {
+    width: 30rem;
+    height: 20rem;
   }
   .container .main-contracheque .values {
     padding: 0 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
-  .container .main-contracheque .values ul li span {
-    font-size: 0.8rem;
+  .container .main-contracheque .values ul {
+    width: 100%;
+    height: 100%;
+  }
+  .container .main-contracheque .values ul li {
+    height: 3rem;
+  }
+  .container .main-notificacoes {
+    grid-row-start: 3;
+    grid-row-end: 15;
+    grid-column-start: 1;
+    grid-column-end: 17;
+  }
+  .container .main-notificacoes .titulo h1 {
+    font-size: 2.3rem;
+  }
+  .container .main-notificacoes .notificacoes .notification-box {
+    display: grid;
+    grid-template-columns: 5rem 2fr 1fr 3fr;
+    font-size: 1.3rem;
+  }
+  .container .main-notificacoes .notificacoes .notification-box .icon i {
+    font-size: 2.3rem;
+  }
+  .container .main-notificacoes .notificacoes .notification-box p {
+    font-size: 1.3rem;
   }
   #body .loginbox {
     width: 32rem;

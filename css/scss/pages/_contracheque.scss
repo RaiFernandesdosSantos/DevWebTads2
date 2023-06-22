@@ -13,16 +13,17 @@
             padding: 2rem;
 
             span {
-                font-size: 4rem;
-                font-weight: 600;
+                font-size: 3rem;
+                font-weight: bold;
             }
 
             .select {
                 @include functions.flex(center, space-between, row);
-                @include functions.alturaLargura(20rem, 4rem);
+                @include functions.alturaLargura(15rem, 4rem);
 
-                select {
-                    font-size: 2rem;
+                .mes {
+                    font-size: 2.5rem;
+                    font-weight: 400;
                 }
 
                 .download {
@@ -41,14 +42,13 @@
                 border-right: .1rem solid functions.$fonte;
 
                 img {
-                    width: 50rem;
-                    height: 35rem;
+                    width: 40rem;
+                    height: 25rem;
                     margin-bottom: 1rem;
                 }
 
                 span {
                     margin-bottom: 1rem;
-                    font-weight: 500;
                 }
             }
 
