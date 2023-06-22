@@ -52,12 +52,15 @@ html {
   align-items: center;
   justify-content: flex-end;
   flex-direction: row;
-  font-size: 4.5rem;
+  font-size: 6rem;
   width: 50%;
   height: 100%;
 }
 .container #header .logo i {
   color: orange;
+}
+.container #header .chat i {
+  color: #769cc2;
 }
 .container #header .menu {
   display: none;
@@ -90,6 +93,7 @@ html {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  font-weight: 500;
 }
 .container #aside .perfil .span-group .nome {
   font-size: 2rem;
@@ -98,19 +102,30 @@ html {
   font-size: 1.3rem;
 }
 .container #aside .menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
   width: 100%;
   height: 45rem;
   padding: 1rem 0 0 1rem;
 }
-.container #aside .menu h1,
-.container #aside .menu h2 {
-  margin-bottom: 1rem;
-  font-weight: 400;
-}
 .container #aside .menu a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 10rem;
   font-size: 2rem;
   color: black;
-  font-weight: bold;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.container #aside .menu a i {
+  margin-left: 1rem;
+  color: red;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 .container #section {
   padding: 0 2rem 0 2rem;
@@ -141,8 +156,8 @@ html {
 }
 .container #section .informacoes .info-l,
 .container #section .informacoes .info-r .info-group {
-  font-size: 2.3rem;
-  padding: 0 0.5rem 0 0.5rem;
+  font-size: 2rem;
+  padding: 0.5rem;
 }
 .container #section .informacoes .info-l {
   border-right: 0.1rem solid black;
@@ -155,6 +170,8 @@ html {
 }
 .container #section .informacoes .info-l span {
   color: lawngreen;
+  text-align: center;
+  width: 100%;
 }
 .container #section .informacoes .info-r {
   width: 55%;
@@ -216,6 +233,28 @@ html {
 }
 .container #main .table .row .cell i {
   font-size: 3rem;
+}
+.container #main .table .row .cell #ausencia {
+  text-align: center;
+  color: red;
+  display: none;
+}
+.container #main .table .row .cell i:hover + #ausencia {
+  display: block;
+}
+.container #main .table .row .cell #vermelho:hover {
+  color: red;
+}
+.container #main .table .row .cell #inconstencia {
+  text-align: center;
+  color: orange;
+  display: none;
+}
+.container #main .table .row .cell i:hover + #inconstencia {
+  display: block;
+}
+.container #main .table .row .cell #laranja:hover {
+  color: orange;
 }
 .container #footer {
   grid-row-start: 15;
@@ -428,6 +467,7 @@ html {
   width: 80rem;
   height: 6rem;
   border-radius: 1.2rem 0 0 1.2rem;
+  padding: 3rem;
 }
 .container .main-chat .digitemensagem form .group .upload {
   border-radius: 0 1.2rem 1.2rem 0;
@@ -491,8 +531,9 @@ html {
   font-size: 2rem;
   border-right: 0.1rem solid black;
 }
-.container .main-contracheque .graph-values .graph i {
-  font-size: 15rem;
+.container .main-contracheque .graph-values .graph img {
+  width: 50rem;
+  height: 35rem;
   margin-bottom: 1rem;
 }
 .container .main-contracheque .graph-values .graph span {
@@ -547,9 +588,9 @@ html {
   grid-template-columns: 1fr 1fr 1fr 3fr;
   width: 100%;
   height: 6rem;
-  border: solid 0.1rem orangered;
+  border: solid 0.2rem rgb(164, 50, 8);
+  border-radius: 1rem;
   font-size: 1.75rem;
-  padding: 1rem;
   align-items: center;
   justify-items: center;
 }
@@ -596,11 +637,12 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  font-size: 8rem;
+  font-size: 10rem;
   width: 15rem;
   height: 15rem;
   background-color: lightgrey;
   margin-bottom: 2rem;
+  border-radius: 3rem;
 }
 #body .loginbox .logo i {
   color: orange;
@@ -610,7 +652,7 @@ html {
 }
 #body .loginbox form {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 54%;
@@ -619,6 +661,9 @@ html {
 }
 #body .loginbox form label {
   margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
 }
 #body .loginbox form input {
   width: 30rem;
@@ -636,7 +681,9 @@ html {
   margin-top: 1rem;
   border: none;
   font-size: 1.3rem;
-} /* Imports of the medias queries */
+}
+
+/* Imports of the medias queries */
 @media (min-width: 500px) and (max-width: 849px) {
   .container {
     width: 100%;
