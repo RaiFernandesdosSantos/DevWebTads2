@@ -227,15 +227,13 @@
                         border: none;
                         border-bottom: .1rem solid functions.$fonte;
 
-                        img {
-                            @include functions.alturaLargura(35rem, 15rem);
-                        }
                     }
                 }
 
                 .values {
                     padding: 0 1rem 0 1rem;
                     width: 100%;
+                    
                     ul {
                         @include functions.alturaLargura(100%, 100%);
                         @include functions.flex(space-between, center, column);
