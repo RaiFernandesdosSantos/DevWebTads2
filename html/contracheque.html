@@ -156,14 +156,23 @@
     var btn = document.getElementById("btn-menu");
     var menu = document.getElementById("aside");
 
+    var media = window.matchMedia("(min-width: 500px)")
+
     var btnFecha = document.getElementById("btnFecha");
 
-    btn.addEventListener("click", function (event) {
-      menu.style.display = "block";
-    });
+    window.addEventListener("resize", function () {
+      if (media.matches) {
+        menu.style.display = "block";
+      }
+      else {
+        btn.addEventListener("click", function (event) {
+          menu.style.display = "block";
+        });
 
-    btnFecha.addEventListener("click", function (event) {
-      menu.style.display = "none";
+        btnFecha.addEventListener("click", function (event) {
+          menu.style.display = "none";
+        });
+      }
     });
   </script>
 </body>
