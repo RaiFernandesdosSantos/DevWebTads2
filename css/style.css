@@ -59,6 +59,9 @@ html {
 .container #header .logo i {
   color: orange;
 }
+.container #header .chat i {
+  color: #769cc2;
+}
 .container #header .menu {
   display: none;
 }
@@ -464,6 +467,7 @@ html {
   width: 80rem;
   height: 6rem;
   border-radius: 1.2rem 0 0 1.2rem;
+  padding: 3rem;
 }
 .container .main-chat .digitemensagem form .group .upload {
   border-radius: 0 1.2rem 1.2rem 0;
