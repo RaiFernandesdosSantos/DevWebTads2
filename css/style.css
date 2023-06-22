@@ -896,7 +896,7 @@ html {
   }
   .container #aside {
     display: none;
-    background-color: white;
+    background-color: #FFFAF0;
     position: absolute;
     width: 50%;
   }
@@ -1051,7 +1051,6 @@ html {
   .container .main-contracheque .values {
     padding: 0 1rem 0 1rem;
     width: 100%;
-    height: 25%;
   }
   .container .main-contracheque .values ul {
     display: flex;
