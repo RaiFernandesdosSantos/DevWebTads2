@@ -230,10 +230,14 @@
 
                         img {
 <<<<<<< HEAD
+<<<<<<< HEAD
                             @include functions.alturaLargura(35rem, 15rem);
 =======
                             @include functions.alturaLargura(100%, 100%);
 >>>>>>> f42d43f1d3ef5adb53902dd0fb034336f18a013c
+=======
+                            @include functions.alturaLargura(100%, 100%);
+>>>>>>> 86e2f89b3cf7c8d3d19b9e2673c9111c5595f0a3
                         }
                     }
                 }
