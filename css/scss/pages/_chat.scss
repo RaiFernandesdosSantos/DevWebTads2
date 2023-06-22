@@ -29,7 +29,7 @@
 
         .chatbox {
             @include functions.flex(flex-end, flex-start, row);
-            
+
             .generica {
                 @include functions.flex(center, center, row);
                 @include functions.alturaLargura(40%, 10rem);
@@ -57,7 +57,7 @@
                     @include functions.flex(center, flex-start, row);
                     border: .1rem solid functions.$fonte;
                     border-radius: 1.2rem;
-                    margin-right: 1.5rem;
+                    margin-right: 1rem;
 
                     input,
                     .upload {
@@ -65,9 +65,9 @@
                     }
 
                     input {
-                        @include functions.alturaLargura(80rem, 6rem);
+                        @include functions.alturaLargura(50rem, 6rem);
                         border-radius: 1.2rem 0 0 1.2rem;
-                        padding: 3rem;
+                        padding: 2rem;
                         text-align: left;
                     }
 

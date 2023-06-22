@@ -34,8 +34,7 @@
 
                 label {
                     margin-bottom: .5rem;
-                    display: flex;
-                    justify-content: center;
+                    @include functions.flex(flex-start, center, row);
                     font-weight: 500;
                 }
 
