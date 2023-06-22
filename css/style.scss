@@ -20,6 +20,7 @@
   @include functions.alturaLargura(80%, 100vh);
   margin: 0 auto;
   @include functions.grid(16, 1fr, 16, 1fr);
+  background: functions.$fundo;
 
   /* Style Home Page */
 
@@ -42,7 +43,7 @@
   /* Style Contracheque Page */
 
   @include contracheque.main;
-  
+
   @include notificacoes.main;
 }
 
