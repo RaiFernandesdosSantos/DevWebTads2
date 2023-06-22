@@ -477,6 +477,7 @@ html {
   height: 6rem;
   border-radius: 1.2rem 0 0 1.2rem;
   padding: 3rem;
+  text-align: left;
 }
 .container .main-chat .digitemensagem form .group .upload {
   border-radius: 0 1.2rem 1.2rem 0;
@@ -771,7 +772,7 @@ html {
     height: 13rem;
   }
   .container .main-chat .digitemensagem form .group input {
-    width: 28rem;
+    width: 35rem;
   }
   .container .main-contracheque {
     grid-row-start: 3;
