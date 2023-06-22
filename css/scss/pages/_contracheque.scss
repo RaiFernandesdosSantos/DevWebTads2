@@ -6,7 +6,7 @@
     .main-contracheque {
         @include functions.posicaoGrid(3, 15, 3, 17);
         display: grid;
-        grid-template-rows: 1fr 6fr;
+        grid-template-rows: 1fr 7fr;
 
         .selectmonth {
             @include functions.flex(center, space-between, row);
