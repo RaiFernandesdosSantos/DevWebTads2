@@ -39,6 +39,24 @@
             @include functions.alturaLargura(100%, 30rem);
             @include functions.flex(center, center, column);
 
+            .fecha {
+                @include functions.alturaLargura(100%, 5rem);
+                @include functions.flex(center, flex-end, row);
+                display: none;
+
+                #btnFecha {
+                    width: 5rem;
+                    height: 4rem;
+                    @include functions.flex(center, center, row);
+                    border: none;
+                    background-color: white;
+
+                    i {
+                        font-size: 4rem;
+                    }
+                }
+            }
+
             i {
                 font-size: 10rem;
             }

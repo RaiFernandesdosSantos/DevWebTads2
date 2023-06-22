@@ -37,6 +37,12 @@
 
                 .perfil {
                     @include functions.alturaLargura(100%, 20rem);
+                    @include functions.flex(center, flex-start, column);
+
+                    .fecha {
+                        @include functions.alturaLargura(100%, 5rem);
+                        display: flex;
+                    }
 
                     i {
                         font-size: 8rem;
@@ -284,7 +290,6 @@
 
                 form {
                     @include functions.alturaLargura(26rem, 23rem);
-                    border: 2px solid black;
 
                     label {
                         font-size: 1.7rem;

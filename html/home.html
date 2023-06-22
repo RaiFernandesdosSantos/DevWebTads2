@@ -47,6 +47,12 @@
       <!-- User Profile-->
 
       <div class="perfil">
+        <div class="fecha">
+          <button type="button" id="btnFecha">
+            <i class='bx bx-left-arrow-alt'></i>
+          </button>
+        </div>
+
         <i class="bx bxs-user-circle"></i>
 
         <div class="span-group">
@@ -306,8 +312,14 @@
     var btn = document.getElementById("btn-menu");
     var menu = document.getElementById("aside");
 
+    var btnFecha = document.getElementById("btnFecha");
+
     btn.addEventListener("click", function (event) {
       menu.style.display = "block";
+    });
+
+    btnFecha.addEventListener("click", function (event) {
+      menu.style.display = "none";
     });
   </script>
 </body>

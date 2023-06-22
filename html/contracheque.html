@@ -22,7 +22,9 @@
       <!-- Menu Icon -->
 
       <div class="menu">
-        <i class='bx bx-menu'></i>
+        <button type="button" id="btn-menu">
+          <i class='bx bx-menu'></i>
+        </button>
       </div>
 
       <!-- Logo -->
@@ -44,6 +46,12 @@
       <!-- User Profile-->
 
       <div class="perfil">
+        <div class="fecha">
+          <button type="button" id="btnFecha">
+            <i class='bx bx-left-arrow-alt'></i>
+          </button>
+        </div>
+
         <i class="bx bxs-user-circle"></i>
 
         <div class="span-group">
@@ -143,6 +151,21 @@
       </a>
     </footer>
   </div>
+
+  <script>
+    var btn = document.getElementById("btn-menu");
+    var menu = document.getElementById("aside");
+
+    var btnFecha = document.getElementById("btnFecha");
+
+    btn.addEventListener("click", function (event) {
+      menu.style.display = "block";
+    });
+
+    btnFecha.addEventListener("click", function (event) {
+      menu.style.display = "none";
+    });
+  </script>
 </body>
 
 </html>
