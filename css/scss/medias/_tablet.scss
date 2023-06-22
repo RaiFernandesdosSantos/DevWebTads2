@@ -21,15 +21,15 @@
                 @include functions.posicaoGrid(3, 6, 5, 17);
 
                 .informacoes {
-                    @include functions.alturaLargura(90%, 60%);
+                    @include functions.alturaLargura(90%, 40%);
 
                     .info-l {
-                        font-size: 1.5rem;
+                        font-size: 1.75rem;
                     }
 
                     .info-r {
                         .info-group {
-                            font-size: 1.5rem;
+                            font-size: 1.75rem;
                         }
                     }
                 }
