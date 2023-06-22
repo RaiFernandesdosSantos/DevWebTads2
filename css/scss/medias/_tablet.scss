@@ -74,21 +74,24 @@
 
                 .graph-values {
                     padding: 0 1rem 0 1rem;
-                    @include functions.grid(2, 1fr, 1, 1fr);
+                    @include functions.flex(center, flex-start, column);
+                    overflow: scroll;
 
                     .graph {
                         border: none;
                         border-bottom: .1rem solid functions.$fonte;
 
-                        img {
-                            @include functions.alturaLargura(25rem, 15rem);
+                      
+                        i {
+                            font-size: 15rem;
                         }
                     }
                 }
 
                 .values {
                     padding: 0 1rem 0 1rem;
-
+                    width: 100%;
+                    
                     ul {
                         li {
                             span {
