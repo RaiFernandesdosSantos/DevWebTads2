@@ -54,6 +54,10 @@
                     border: none;
                     font-size: 1.3rem;
                 }
+                button:hover{
+                    cursor: pointer;
+                    color: functions.$laranja;
+                }
             }
         }
     }

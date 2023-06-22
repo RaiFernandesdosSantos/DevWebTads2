@@ -742,6 +742,10 @@ html {
   border: none;
   font-size: 1.3rem;
 }
+#body .loginbox form button:hover {
+  cursor: pointer;
+  color: orange;
+}
 
 /* Imports of the medias queries */
 @media (min-width: 500px) and (max-width: 900px) {
