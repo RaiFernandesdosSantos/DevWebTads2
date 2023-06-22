@@ -6,11 +6,11 @@
     .main-contracheque {
         @include functions.posicaoGrid(3, 15, 3, 17);
         display: grid;
-        grid-template-rows: 1fr 7fr;
+        grid-template-rows: 1fr 9fr;
 
         .selectmonth {
             @include functions.flex(center, space-between, row);
-            padding: 2rem;
+            padding: 0 1rem 0 1rem;
 
             span {
                 font-size: 3rem;
@@ -42,7 +42,7 @@
                 border-right: .1rem solid functions.$fonte;
 
                 img {
-                    @include functions.alturaLargura(40rem, 35rem);
+                    @include functions.alturaLargura(100%, 100%);
                 }
 
                 span {
