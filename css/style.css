@@ -1091,7 +1091,6 @@ html {
     font-size: 1.8rem;
     border: none;
     border-bottom: 0.1rem solid black;
-    height: 75%;
   }
   .container .main-contracheque .graph-values .graph img {
     width: 100%;
@@ -1099,7 +1098,6 @@ html {
   }
   .container .main-contracheque .values {
     padding: 0 1rem 0 1rem;
-    height: 25%;
     width: 100%;
   }
   .container .main-contracheque .values ul {
