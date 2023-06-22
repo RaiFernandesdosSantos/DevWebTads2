@@ -542,26 +542,34 @@ html {
   flex-direction: column;
 }
 .container .main-notificacoes .notificacoes .notification-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr;
   width: 100%;
-  height: 4rem;
+  height: 6rem;
+  border: solid 0.1rem orangered;
   font-size: 1.75rem;
   padding: 1rem;
-  border: solid 1px black;
+  align-items: center;
+  justify-items: center;
 }
 .container .main-notificacoes .notificacoes .notification-box i {
   font-size: 4rem;
-  color: red;
+}
+.container .main-notificacoes .notificacoes .notification-box .porque {
+  text-decoration: underline;
+  font-weight: 700;
 }
 .container .main-notificacoes .notificacoes .notification-box #ausencia {
-  text-decoration: underline;
   color: red;
+}
+.container .main-notificacoes .notificacoes .notification-box #inconsistencia {
+  color: orange;
 }
 .container .main-notificacoes .notificacoes .notification-box .quando {
   text-decoration: underline;
+}
+.container .main-notificacoes .notificacoes .notification-box p {
+  font-size: 2rem;
 }
 
 /* Style login page */
