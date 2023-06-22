@@ -488,7 +488,7 @@ html {
   flex-direction: row;
   border: 0.1rem solid black;
   border-radius: 1.2rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 .container .main-chat .digitemensagem form .group input,
 .container .main-chat .digitemensagem form .group .upload {
@@ -617,17 +617,19 @@ html {
 .container .main-notificacoes .notificacoes {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
+  gap: 2rem;
 }
 .container .main-notificacoes .notificacoes .notification-box {
   display: grid;
-  grid-template-columns: 8rem 1fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 3fr;
   width: 100%;
   height: 5rem;
   border: 0.1rem solid rgb(164, 50, 8);
   border-radius: 1rem;
   font-size: 1.7rem;
+  justify-items: center;
 }
 .container .main-notificacoes .notificacoes .notification-box .icon {
   display: flex;
@@ -637,7 +639,7 @@ html {
   padding-left: 1rem;
 }
 .container .main-notificacoes .notificacoes .notification-box .icon i {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 .container .main-notificacoes .notificacoes .notification-box .porque {
   text-decoration: underline;
@@ -835,6 +837,21 @@ html {
   .container .main-contracheque .values ul li span {
     font-size: 1.3rem;
   }
+  .container .main-notificacoes {
+    grid-row-start: 3;
+    grid-row-end: 15;
+    grid-column-start: 5;
+    grid-column-end: 17;
+  }
+  .container .main-notificacoes .notificacoes .notification-box {
+    font-size: 1.5rem;
+  }
+  .container .main-notificacoes .notificacoes .notification-box .icon i {
+    font-size: 2.5rem;
+  }
+  .container .main-notificacoes .notificacoes .notification-box p {
+    font-size: 1.5rem;
+  }
   #body .loginbox form input {
     width: 31rem;
     height: 4rem;
@@ -1024,8 +1041,9 @@ html {
     font-size: 2rem;
   }
   .container .main-chat .digitemensagem form .group input {
-    width: 18rem;
+    width: 20rem;
     height: 4rem;
+    padding: 0.75rem;
   }
   .container .main-chat .digitemensagem form .enviar,
   .container .main-chat .digitemensagem form .upload {

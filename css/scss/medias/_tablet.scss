@@ -108,6 +108,25 @@
                     }
                 }
             }
+
+            .main-notificacoes {
+                @include functions.posicaoGrid(3, 15, 5, 17);
+
+                .notificacoes {
+                    .notification-box {
+                        font-size: 1.5rem;
+                        .icon {
+                            i {
+                                font-size: 2.5rem;
+                            }
+                        }
+
+                        p {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
         }
 
         #body {

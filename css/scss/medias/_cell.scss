@@ -185,7 +185,8 @@
 
                         .group {
                             input {
-                                @include functions.alturaLargura(18rem, 4rem);
+                                @include functions.alturaLargura(20rem, 4rem);
+                                padding: .75rem
                             }
                         }
 
