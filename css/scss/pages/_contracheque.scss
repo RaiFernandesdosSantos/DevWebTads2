@@ -52,10 +52,10 @@
 
             .values {
                 padding: 1rem;
-                @include functions.flex(center, center, column);
 
                 ul {
-                    width: 100%;
+                    @include functions.alturaLargura(100%, 100%);
+                    @include functions.flex(space-between, center, column);
 
                     li {
                         @include functions.flex(center, space-between, row);

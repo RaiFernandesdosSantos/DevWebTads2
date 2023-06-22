@@ -33,7 +33,7 @@
                 font-size: 2rem;
 
                 label {
-                    margin-bottom: .5rem;
+                    margin-bottom: 1rem;
                     @include functions.flex(flex-start, center, row);
                     font-weight: 500;
                 }
@@ -48,11 +48,11 @@
                 }
 
                 button {
-                    @include functions.alturaLargura(11rem, 4rem);
+                    @include functions.alturaLargura(15rem, 4rem);
                     border-radius: .7rem;
                     margin-top: 1rem;
                     border: none;
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                 }
             }
         }

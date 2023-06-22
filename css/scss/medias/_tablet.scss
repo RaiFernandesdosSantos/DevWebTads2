@@ -37,7 +37,6 @@
 
             #main {
                 @include functions.posicaoGrid(6, 15, 5, 17);
-                overflow: scroll;
             }
 
             #footer {
@@ -71,14 +70,6 @@
                     span {
                         font-size: 2.5rem;
                     }
-
-                    .select {
-                        @include functions.alturaLargura(15rem, 4rem);
-
-                        .download {
-                            font-size: 3.3rem;
-                        }
-                    }
                 }
 
                 .graph-values {
@@ -86,16 +77,11 @@
                     @include functions.grid(2, 1fr, 1, 1fr);
 
                     .graph {
-                        font-size: 2rem;
                         border: none;
                         border-bottom: .1rem solid functions.$fonte;
 
                         img {
                             @include functions.alturaLargura(25rem, 15rem);
-                        }
-
-                        i {
-                            font-size: 15rem;
                         }
                     }
                 }
@@ -137,19 +123,6 @@
         #body {
             .loginbox {
                 @include functions.alturaLargura(80%, 50rem);
-
-                form {
-                    input {
-                        @include functions.alturaLargura(31rem, 4rem);
-                        font-size: 2rem;
-                        border: .1rem solid functions.$fonte;
-                    }
-
-                    button {
-                        @include functions.alturaLargura(15rem, 4rem);
-                        font-size: 1.7rem;
-                    }
-                }
             }
         }
     }

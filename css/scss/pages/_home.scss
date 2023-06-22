@@ -6,6 +6,7 @@
     #header {
         @include functions.flex(center, flex-end, row);
         border-bottom: .1rem solid black;
+        padding: 0;
 
         .chat,
         .logo {
