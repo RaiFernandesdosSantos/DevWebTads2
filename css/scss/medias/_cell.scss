@@ -30,7 +30,7 @@
 
             #aside {
                 display: none;
-                background-color: functions.$branco;
+                background-color: functions.$fundo;
                 position: absolute;
                 width: 50%;
 
@@ -209,6 +209,7 @@
                 .values {
                     padding: 0 1rem 0 1rem;
                     width: 100%;
+
                     ul {
                         @include functions.flex(space-between, center, column);
 
