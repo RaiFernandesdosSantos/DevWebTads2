@@ -620,6 +620,7 @@ html {
   justify-content: flex-start;
   flex-direction: column;
   gap: 2rem;
+  overflow: scroll;
 }
 .container .main-notificacoes .notificacoes .notification-box {
   display: grid;
@@ -770,13 +771,13 @@ html {
   }
   .container #section .informacoes {
     width: 90%;
-    height: 60%;
+    height: 40%;
   }
   .container #section .informacoes .info-l {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   .container #section .informacoes .info-r .info-group {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   .container #main {
     grid-row-start: 6;
@@ -1106,6 +1107,9 @@ html {
   }
   .container .main-notificacoes .titulo h1 {
     font-size: 2.3rem;
+  }
+  .container .main-notificacoes .notificacoes {
+    gap: 1rem;
   }
   .container .main-notificacoes .notificacoes .notification-box {
     display: grid;
