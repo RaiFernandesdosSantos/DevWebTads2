@@ -26,7 +26,7 @@ html {
   /* Style Home Page */
   /* Header style - Page Home */
   /* Aside style - Page Home */
-  /* Section styel - Page Home */
+  /* Section style - Page Home */
   /* Main style - Page Home */
   /* Footer style - Page Home */
   /* Style Configuracoes Page */
@@ -129,7 +129,7 @@ html {
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
-  height: 45rem;
+  height: calc(100% - 30rem);
   padding: 1rem 0 0 1rem;
 }
 .container #aside .menu a {
@@ -488,17 +488,17 @@ html {
   flex-direction: row;
   border: 0.1rem solid black;
   border-radius: 1.2rem;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 .container .main-chat .digitemensagem form .group input,
 .container .main-chat .digitemensagem form .group .upload {
   border: none;
 }
 .container .main-chat .digitemensagem form .group input {
-  width: 80rem;
+  width: 50rem;
   height: 6rem;
   border-radius: 1.2rem 0 0 1.2rem;
-  padding: 3rem;
+  padding: 2rem;
   text-align: left;
 }
 .container .main-chat .digitemensagem form .group .upload {
@@ -566,7 +566,7 @@ html {
 }
 .container .main-contracheque .graph-values .graph img {
   width: 40rem;
-  height: 25rem;
+  height: 35rem;
   margin-bottom: 1rem;
 }
 .container .main-contracheque .graph-values .graph span {
@@ -721,7 +721,9 @@ html {
 #body .loginbox form label {
   margin-bottom: 0.5rem;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
+  flex-direction: row;
   font-weight: 500;
 }
 #body .loginbox form input {
@@ -743,7 +745,7 @@ html {
 }
 
 /* Imports of the medias queries */
-@media (min-width: 500px) and (max-width: 849px) {
+@media (min-width: 500px) and (max-width: 900px) {
   .container {
     width: 100%;
     height: 100vh;
@@ -809,7 +811,7 @@ html {
     padding: 0 1rem 0 1rem;
   }
   .container .main-contracheque .selectmonth span {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .container .main-contracheque .selectmonth .select {
     width: 15rem;
@@ -828,6 +830,10 @@ html {
     font-size: 2.3rem;
     border: none;
     border-bottom: 0.1rem solid black;
+  }
+  .container .main-contracheque .graph-values .graph img {
+    width: 35rem;
+    height: 20rem;
   }
   .container .main-contracheque .graph-values .graph i {
     font-size: 15rem;
@@ -852,6 +858,10 @@ html {
   }
   .container .main-notificacoes .notificacoes .notification-box p {
     font-size: 1.5rem;
+  }
+  #body .loginbox {
+    width: 80%;
+    height: 50rem;
   }
   #body .loginbox form input {
     width: 31rem;
@@ -1084,17 +1094,19 @@ html {
   .container .main-contracheque .graph-values .graph img {
     width: 30rem;
     height: 20rem;
+    width: 35rem;
+    height: 25rem;
   }
   .container .main-contracheque .values {
     padding: 0 1rem 0 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
   .container .main-contracheque .values ul {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    flex-direction: column;
   }
   .container .main-contracheque .values ul li {
     height: 3rem;

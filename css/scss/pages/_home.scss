@@ -45,8 +45,7 @@
                 display: none;
 
                 #btnFecha {
-                    width: 5rem;
-                    height: 4rem;
+                    @include functions.alturaLargura(5rem, 4rem);
                     @include functions.flex(center, center, row);
                     border: none;
                     background-color: white;
@@ -77,7 +76,7 @@
 
         .menu {
             @include functions.flex(flex-start, space-between, column);
-            @include functions.alturaLargura(100%, 45rem);
+            @include functions.alturaLargura(100%, calc(100% - 30rem));
             padding: 1rem 0 0 1rem;
 
             a {
@@ -98,7 +97,7 @@
         }
     }
 
-    /* Section styel - Page Home */
+    /* Section style - Page Home */
 
     #section {
         padding: 0 2rem 0 2rem;

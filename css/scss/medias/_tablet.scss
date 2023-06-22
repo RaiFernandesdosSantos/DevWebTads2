@@ -1,7 +1,7 @@
 @use "../functions";
 
 @mixin tablet {
-    @media (min-width: 500px) and (max-width: 849px) {
+    @media (min-width: 500px) and (max-width: 900px) {
         .container {
             @include functions.alturaLargura(100%, 100vh);
 
@@ -69,7 +69,7 @@
                     padding: 0 1rem 0 1rem;
 
                     span {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                     }
 
                     .select {
@@ -89,6 +89,10 @@
                         font-size: 2.3rem;
                         border: none;
                         border-bottom: .1rem solid functions.$fonte;
+
+                        img {
+                            @include functions.alturaLargura(35rem, 20rem);
+                        }
 
                         i {
                             font-size: 15rem;
@@ -115,6 +119,7 @@
                 .notificacoes {
                     .notification-box {
                         font-size: 1.5rem;
+
                         .icon {
                             i {
                                 font-size: 2.5rem;
@@ -131,6 +136,8 @@
 
         #body {
             .loginbox {
+                @include functions.alturaLargura(80%, 50rem);
+
                 form {
                     input {
                         @include functions.alturaLargura(31rem, 4rem);
