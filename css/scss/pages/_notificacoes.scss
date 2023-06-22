@@ -19,6 +19,7 @@
         .notificacoes {
             @include functions.flex(center, flex-start, column);
             gap: 2rem;
+            overflow: scroll;
 
             .notification-box {
                 display: grid;
