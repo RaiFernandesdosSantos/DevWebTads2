@@ -1,4 +1,4 @@
-# Trabalho TADS
+# PontoApp
 
 Este projeto é uma reprodução de um sistema de ponto mobile.
 
