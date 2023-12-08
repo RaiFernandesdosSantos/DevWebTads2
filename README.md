@@ -15,9 +15,9 @@ Desenvolvido como parte da avaliação prática, o projeto vai além da simples 
 |                                                                 |                                                                 |                                                                 |
 | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
 | Tela de Login                                                   | Tela Inicial                                                    | Tela de Contracheque                                            |
-| [<img src="image.png" width="400" height="300">](image.png)     | [<img src="image-1.png" width="400" height="300">](image-1.png) | [<img src="image-2.png" width="400" height="300">](image-2.png) |
+| [<img src="image.png" width="350" height="200">](image.png)     | [<img src="image-1.png" width="350" height="200">](image-1.png) | [<img src="image-2.png" width="350" height="200">](image-2.png) |
 | Tela de Contracheque                                            | Tela de Notificação                                             | Tela de Chat                                                    |
-| [<img src="image-3.png" width="400" height="300">](image-3.png) | [<img src="image-4.png" width="400" height="300">](image-4.png) | [<img src="image-5.png" width="400" height="300">](image-5.png) |
+| [<img src="image-3.png" width="350" height="200">](image-3.png) | [<img src="image-4.png" width="350" height="200">](image-4.png) | [<img src="image-5.png" width="350" height="200">](image-5.png) |
 
 ## Estrutura do Projeto
 
