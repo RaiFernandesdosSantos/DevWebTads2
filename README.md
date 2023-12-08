@@ -12,33 +12,36 @@ Desenvolvido como parte da avaliação prática, o projeto vai além da simples 
 
 ## Telas
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+|                                                               |                                                               |                                                               |
+| ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| Tela de Login                                                 | Tela Inicial                                                  | Tela de Contracheque                                          |
+| [<img src="image.png" width="20" height="20">](image.png)     | [<img src="image-1.png" width="20" height="20">](image-1.png) | [<img src="image-2.png" width="20" height="20">](image-2.png) |
+| Tela de Contracheque                                          | Tela de Notificação                                           | Tela de Chat                                                  |
+| [<img src="image-3.png" width="20" height="20">](image-3.png) | [<img src="image-4.png" width="20" height="20">](image-4.png) | [<img src="image-5.png" width="20" height="20">](image-5.png) |
 
 ### Tela de Login
 
-<img src="image.png" alt="Login" width="200"/>
+![Login](image.png)
 
 ### Tela Inicial
 
-<img src="image-1.png" alt="Home" width="200"/>
+![Home](image-1.png)
 
 ### Tela de Contracheque
 
-<img src="image-2.png" alt="Contracheque" width="200"/>
+![Contracheque](image-2.png)
 
 ### Tela de Notificação
 
-<img src="image-3.png" alt="Notificações" width="200"/>
+![Notificacoes](image-3.png)
 
 ### Tela de Chat
 
-<img src="image-4.png" alt="Chat" width="200"/>
+![Chat](image-4.png)
 
 ### Tela de Configurações
 
-<img src="image-5.png" alt="Configurações de Usuário" width="200"/>
-
-</div>
+![Configuracoes de Usuario](image-5.png)
 
 ## Estrutura do Projeto
 
