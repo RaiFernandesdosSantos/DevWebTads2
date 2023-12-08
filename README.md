@@ -15,33 +15,9 @@ Desenvolvido como parte da avaliação prática, o projeto vai além da simples 
 |                                                                 |                                                                 |                                                                 |
 | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
 | Tela de Login                                                   | Tela Inicial                                                    | Tela de Contracheque                                            |
-| [<img src="image.png" width="150" height="150">](image.png)     | [<img src="image-1.png" width="150" height="150">](image-1.png) | [<img src="image-2.png" width="150" height="150">](image-2.png) |
+| [<img src="image.png" width="300" height="300">](image.png)     | [<img src="image-1.png" width="300" height="300">](image-1.png) | [<img src="image-2.png" width="300" height="300">](image-2.png) |
 | Tela de Contracheque                                            | Tela de Notificação                                             | Tela de Chat                                                    |
-| [<img src="image-3.png" width="150" height="150">](image-3.png) | [<img src="image-4.png" width="150" height="150">](image-4.png) | [<img src="image-5.png" width="150" height="150">](image-5.png) |
-
-### Tela de Login
-
-![Login](image.png)
-
-### Tela Inicial
-
-![Home](image-1.png)
-
-### Tela de Contracheque
-
-![Contracheque](image-2.png)
-
-### Tela de Notificação
-
-![Notificacoes](image-3.png)
-
-### Tela de Chat
-
-![Chat](image-4.png)
-
-### Tela de Configurações
-
-![Configuracoes de Usuario](image-5.png)
+| [<img src="image-3.png" width="300" height="300">](image-3.png) | [<img src="image-4.png" width="300" height="300">](image-4.png) | [<img src="image-5.png" width="300" height="300">](image-5.png) |
 
 ## Estrutura do Projeto
 
