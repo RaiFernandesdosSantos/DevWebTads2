@@ -10,9 +10,26 @@ Construído como parte da avaliação prática, o projeto busca não apenas aval
 
 ## Telas
 
+### Tela de Login
+
 ![Login](image.png)
+
+### Tela Inicial
+
 ![Home](image-1.png)
+
+### Tela de Contracheque
+
 ![Contracheque](image-2.png)
+
+### Tela de Notificação
+
 ![Notificacoes](image-3.png)
+
+### Tela de Chat
+
 ![Chat](image-4.png)
+
+### Tela de Configurações
+
 ![Configuracoes de Usuario](image-5.png)
