@@ -12,24 +12,50 @@ Desenvolvido como parte da avaliação prática, o projeto vai além da simples 
 
 ## Telas
 
-|                                                                 |                                                                 |                                                                 |
-| --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
-| Tela de Login                                                   | Tela Inicial                                                    | Tela de Contracheque                                            |
-| [<img src="image.png" width="350" height="200">](image.png)     | [<img src="image-1.png" width="350" height="200">](image-1.png) | [<img src="image-2.png" width="350" height="200">](image-2.png) |
-| Tela de Contracheque                                            | Tela de Notificação                                             | Tela de Chat                                                    |
-| [<img src="image-3.png" width="350" height="200">](image-3.png) | [<img src="image-4.png" width="350" height="200">](image-4.png) | [<img src="image-5.png" width="350" height="200">](image-5.png) |
+|                                                                               |                                                                               |                                                                               |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Tela de Login                                                                 | Tela Inicial                                                                  | Tela de Contracheque                                                          |
+| [<img src="./docs/image.png" width="350" height="200">](./docs/image.png)     | [<img src="./docs/image-1.png" width="350" height="200">](./docs/image-1.png) | [<img src="./docs/image-2.png" width="350" height="200">](./docs/image-2.png) |
+| Tela de Contracheque                                                          | Tela de Notificação                                                           | Tela de Chat                                                                  |
+| [<img src="./docs/image-3.png" width="350" height="200">](./docs/image-3.png) | [<img src="./docs/image-4.png" width="350" height="200">](./docs/image-4.png) | [<img src="./docs/image-5.png" width="350" height="200">](./docs/image-5.png) |
 
 ## Estrutura do Projeto
 
 ```
 /
-├── README.MD
-├── image.png
-├── image-1.png
-├── image-2.png
-├── image-3.png
-├── image-4.png
-├── image-5.png
+|-- css/
+|   |-- scss/
+|   |    |-- medias/
+|   |    |   |-- _cell.scss
+|   |    |   |-- _tablet.scss
+|   |    |-- pages/
+|   |    |   |-- _login.scss
+|   |    |   |-- _contracheque.scss
+|   |    |   |-- _notificacoes.scss
+|   |    |   |-- _chat.scss
+|   |    |   |-- _configuracoes.scss
+|   |    |   |-- _home.scss
+|   |    |-- _functions.scss
+|   |-- style.css
+|   |-- style.scss
+|   |-- style.css.map
+|-- html/
+|   |-- index.html
+|   |-- home.html
+|   |-- notificacoes.html
+|   |-- chat.html
+|   |-- configuracoes.html
+|   |-- contracheque.html
+|-- img/
+|   |-- sem-fundo.png
+|-- docs/
+|   |-- image.png
+|   |-- image-1.png
+|   |-- image-2.png
+|   |-- image-3.png
+|   |-- image-4.png
+|   |-- image-5.png
+|-- README.MD
 ```
 
 ## Contato
